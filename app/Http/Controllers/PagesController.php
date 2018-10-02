@@ -29,4 +29,8 @@ class PagesController extends Controller
     public function sermons(){
         return view('pages.sermons');
     }
+
+    public function addevent(){
+        return view('addEvent');
+    }
 }

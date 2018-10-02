@@ -17,6 +17,7 @@ Route::get('/gallery','PagesController@gallery');
 Route::get('/blog','PagesController@blog');
 Route::get('/sermons','PagesController@blog');
 Route::get('/word','PagesController@sermons');
+Route::get('/addevent','PagesController@addevent');
 
 Auth::routes();
 
