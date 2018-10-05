@@ -110,55 +110,6 @@
                                 </div>
                             </div>
                         </div><!-- LATEST EVENT -->
-                        <div class="widget">
-                            <div class="widget-title"><h4>POP MESSAGE</h4></div>					
-                            <div class="message-widget">
-                                <div class="message-carousel">
-                                    <div class="pop-message">
-                                        <img src="images/resource/pop1.jpg" alt="" />
-                                        <h4>GARY HARREL</h4>
-                                        <span>Director-Baseline</span>
-                                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet massa at duwi aliquet scelerisque. Fusce a neque arcu, tempor congue dolor.</blockquote>
-                                        <ul class="sermon-media">
-                                            <li><a href="http://vimeo.com/44867610" data-rel="prettyPhoto" title=""><i class="fa fa-film"></i></a></li>
-                                            <li><a title=""><i class="audio-btn fa fa-headphones"></i>
-                                                <div class="audioplayer"><audio  src="sermons/sermon.mp3"></audio><span class="cross">X</span></div>
-                                            </a></li>
-                                            <li><a target="_blank" href="../../themes.webinane.com/deeds/test.html" title=""><i class="fa fa-download"></i></a></li>
-                                            <li><a target="_blank" href="../../themes.webinane.com/deeds/test.pdf" title=""><i class="fa fa-book"></i></a></li>
-                                        </ul>									
-                                    </div>
-                                    <div class="pop-message">
-                                        <img src="images/resource/pop1.jpg" alt="" />
-                                        <h4>GARY HARREL</h4>
-                                        <span>Director-Baseline</span>
-                                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet massa at duwi aliquet scelerisque. Fusce a neque arcu, tempor congue dolor.</blockquote>
-                                        <ul class="sermon-media">
-                                            <li><a href="http://vimeo.com/44867610" data-rel="prettyPhoto" title=""><i class="fa fa-film"></i></a></li>
-                                            <li><a title=""><i class="audio-btn fa fa-headphones"></i>
-                                                <div class="audioplayer"><audio  src="sermons/sermon.mp3"></audio><span class="cross">X</span></div>
-                                            </a></li>
-                                            <li><a target="_blank" href="../../themes.webinane.com/deeds/test.html" title=""><i class="fa fa-download"></i></a></li>
-                                            <li><a target="_blank" href="../../themes.webinane.com/deeds/test.pdf" title=""><i class="fa fa-book"></i></a></li>
-                                        </ul>									
-                                    </div>
-                                    <div class="pop-message">
-                                        <img src="images/resource/pop1.jpg" alt="" />
-                                        <h4>GARY HARREL</h4>
-                                        <span>Director-Baseline</span>
-                                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet massa at duwi aliquet scelerisque. Fusce a neque arcu, tempor congue dolor.</blockquote>
-                                        <ul class="sermon-media">
-                                            <li><a href="http://vimeo.com/44867610" data-rel="prettyPhoto" title=""><i class="fa fa-film"></i></a></li>
-                                            <li><a title=""><i class="audio-btn fa fa-headphones"></i>
-                                                <div class="audioplayer"><audio  src="sermons/sermon.mp3"></audio><span class="cross">X</span></div>
-                                            </a></li>
-                                            <li><a target="_blank" href="../../themes.webinane.com/deeds/test.html" title=""><i class="fa fa-download"></i></a></li>
-                                            <li><a target="_blank" href="../../themes.webinane.com/deeds/test.pdf" title=""><i class="fa fa-book"></i></a></li>
-                                        </ul>									
-                                    </div>
-                                </div><!-- MESSAGE CAROUSEL WIDGET -->
-                            </div>
-                        </div><!-- POP MESSAGE -->
                     </aside><!-- SIDEBAR -->
                 </div>
             </div>
