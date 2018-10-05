@@ -61,7 +61,7 @@
                                 {{Form::label('event starting time', 'Event Starting Time', ['class' => 'form-control-label'])}}
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
-                                    {{Form::text('starting_time', '', ['class' => 'form-control', 'placeholder'=>'Event Starting Time'])}}
+                                    {{Form::text('start_time', '', ['class' => 'form-control', 'placeholder'=>'Event Starting Time'])}}
                                 </div>
                                 <small class="form-text text-muted">ex. 8:00 A.M</small>
                             </div>
@@ -69,7 +69,7 @@
                                 {{Form::label('event ending time', 'Event Ending Time', ['class' => 'form-control-label'])}}
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
-                                    {{Form::text('starting_ending', '', ['class' => 'form-control', 'placeholder'=>'Event Ending Time'])}}
+                                    {{Form::text('end_time', '', ['class' => 'form-control', 'placeholder'=>'Event Ending Time'])}}
                                 </div>
                                 <small class="form-text text-muted">ex. 8:00 P.M</small>
                             </div>

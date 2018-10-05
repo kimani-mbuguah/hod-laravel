@@ -36,7 +36,21 @@ class EventsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'title' => 'required',
+            'description' => 'required'
+        ]);
+        $event = new Event;
+        $event->image = $request->input('title');
+        $event->title = $request->input('title');
+        //$event->date = $request->input('date');
+        $event->start_time = $request->input('end_time');//this is a bug
+        $event->end_time = $request->input('end_time');
+        $event->location = $request->input('location');
+        $event->posted_by = $request->input('title');
+        $event->description = $request->input('description');
+        $event->save();
+        return redirect('/home')->with('success','Event Created Successfully');  
     }
 
     /**
