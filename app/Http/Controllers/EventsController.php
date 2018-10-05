@@ -14,7 +14,7 @@ class EventsController extends Controller
      */
     public function index()
     {
-        $events = Event::all();
+        $events = Event::orderBy('created_at','desc')->get();
         return view('pages.events')->with('events',$events);
     }
 
