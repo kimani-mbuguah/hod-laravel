@@ -1,7 +1,7 @@
 @extends('layouts.web')
 @section('content')
 <div class="page-top">
-        <div class="parallax" style="background:url(images/parallax1.jpg);"></div>	
+        <div class="parallax" style="background:url(/images/parallax1.jpg);"></div>	
         <div class="container"> 
             <h1>EVENT <span>SINGLE</span></h1>
             <ul>
@@ -17,15 +17,15 @@
                 <div class="row">
                     <div class="col-md-8 column">
                         <div class="single-page">
-                            <img src="images/resource/sermon-single.jpg" alt="" />
-                            <h2>Francis Chan - Passion 2013 - God Is Faithful</h2>
+                            <img src="/images/resource/sermon-single.jpg" alt="" />
+                        <h2>{{$event->title}}</h2>
                             <div class="meta">
                                 <ul>
                                     <li><i class="fa fa-reply"></i> Posted In <a href="#" title="">Sermons</a></li>
                                     <li><i class="fa fa-calendar-o"></i> November 01, 2013</li>
                                     <li><i class="fa fa-user"></i> <a href="#" title="">PAUL LAZARIUS</a></li>
                                 </ul>
-                                <img src="images/resource/author.jpg" alt="" />
+                                <img src="/images/resource/author.jpg" alt="" />
                             </div><!-- POST META -->
                             <div class="event-info">
                                 <div class="col-md-6">
@@ -45,11 +45,11 @@
                         </div><!-- SERMON SINGLE -->
                         <p>Aenean leo vene quam. Pellntes ique ornare sem eius modte venenatis vestibum. Cras mattis itugir purus. Aenean le vene quam. Pellntes ique ornare seeim eiusmodte venenatis vestibum. Cras mattis citur exquisitely fari then far purus. Aenean leo vene quam. Pellntes ique ornare sem eiusmodte venen. Et tollit utamur nam, dcum ullumo etiam velit. Ne scripserit. Sea ex utamur phaedrum, nisl no, no reque sensibus duo. Meini coposae, paulo mediocrem etiam negleg enur. Vis ut argum entum lorem ipsum dolor sit amet, consectetur adipscing elit. Nulla convallis egestas rhoncus. Don eofacilisis fermentum sem, ac viverra ante lucus vel. Donec vel maurs quam. Lorem ipsum dolor sit amet, consect etur adpiscing elit. Nulla convallis egestas rhoncus. Donec facilisis ferme ntum sem, ac viverra ante luctus vel. Donec vel maus quam.Lorem ipsum dolor sit amet, consectetur dipiscing elit. Nulla convallis egestas rhoncus. </p>
                         <blockquote>
-                        <div class="parallax" style="background:url(images/parallax2.jpg);"></div>
+                        <div class="parallax" style="background:url(/images/parallax2.jpg);"></div>
                         <i class="fa fa-quote-left"></i>Voluptate illum dolore ita ipsum, quid deserunt singulis, labore admodum ita multos malis ea nam nam tamen fore amet.<i class="fa fa-quote-right"></i></blockquote><!--- BLOCKQUOTE -->
                         <p>Aenean leo vene quam. Pellntes ique ornare sem eius modte venenatis vestibum. Cras mattis itugir purus. Aenean le vene quam. Pellntes ique ornare seeim eiusmodte venenatis vestibum. Cras mattis citur exquisitely fari then far purus. Aenean leo vene quam. Pellntes ique ornare sem eiusmodte venen. Et tollit utamur nam, dcum ullumo etiam velit. Ne scripserit. Sea ex utamur phaedrum, nisl no, no reque sensibus duo. Meini coposae, paulo mediocrem etiam negleg enur. Vis ut argum entum lorem ipsum dolor sit amet, consectetur adipscing elit. Nulla convallis egestas rhoncus. Don eofacilisis fermentum sem, ac viverra ante lucus vel. Donec vel maurs quam. Lorem ipsum dolor sit amet, consect etur adpiscing elit. Nulla convallis egestas rhoncus. Donec facilisis ferme ntum sem, ac viverra ante luctus vel. Donec vel maus quam.Lorem ipsum dolor sit amet, consectetur dipiscing elit. Nulla convallis egestas rhoncus. </p>
                         <div class="pastor-info">
-                            <img src="images/resource/pastor-info.jpg" alt="" />
+                            <img src="/images/resource/pastor-info.jpg" alt="" />
                             <h4>PAUL LAZARIUS <span>PASTOR</span></h4>
                             <p>Aenean leo vene quam. Pellntes ique ornare sem eiusmodte venenatis vestibum. Cras mattis citur purus. Cras mattis citugir purus. Aenean levene quam. Pellntes ique ornae seeim eiusmodte venenatis vestibum...</p>
                         </div><!-- PASTOR INFO -->
@@ -67,7 +67,7 @@
                             <ul>
                                 <li>
                                     <div class="comment">
-                                        <div class="avatar"><img src="images/resource/comment1.jpg" alt="" /><a href="#" title="">REPLY</a></div>
+                                        <div class="avatar"><img src="/images/resource/comment1.jpg" alt="" /><a href="#" title="">REPLY</a></div>
                                         <h5>Thoms Gomz Britian
                                         <i><span>September</span> 24, 2013 at <span>1:05 pm</span></i></h5>
                                         <p>Praesent rhoncus nunc vitae metus condi tum viverra. Fusce sed estorci condime felis. Ndisse ullamcorper vulputate sagittis. Quisque ullamcorper euismod.</p>
@@ -75,7 +75,7 @@
                                     <ul>
                                         <li>
                                             <div class="comment">
-                                                <div class="avatar"><img src="images/resource/comment2.jpg" alt="" /><a href="#" title="">REPLY</a></div>
+                                                <div class="avatar"><img src="/images/resource/comment2.jpg" alt="" /><a href="#" title="">REPLY</a></div>
                                                 <h5>Thoms Gomz Britian
                                                 <i><span>September</span> 24, 2013 at <span>1:05 pm</span></i></h5>
                                                 <p>Praesent rhoncus nunc vitae metus condi tum viverra. Fusce sed estorci condime felis. Ndisse ullamcorper vulputate sagittis .</p>
@@ -85,7 +85,7 @@
                                 </li>
                                 <li>
                                     <div class="comment">
-                                        <div class="avatar"><img src="images/resource/comment3.jpg" alt="" /><a href="#" title="">REPLY</a></div>
+                                        <div class="avatar"><img src="/images/resource/comment3.jpg" alt="" /><a href="#" title="">REPLY</a></div>
                                         <h5>Thoms Gomz Britian
                                         <i><span>September</span> 24, 2013 at <span>1:05 pm</span></i></h5>
                                         <p>Praesent rhoncus nunc vitae metus condi tum viverra. Fusce sed estorci condime felis. Ndisse ullamcorper vulputate sagittis. Quisque ullamcorper euismod.</p>
@@ -108,7 +108,7 @@
                         <div class="widget">
                             <div class="widget-title"><h4>ABOUT US</h4></div>
                             <div class="footer-logo">
-                                <img src="images/logo.png" alt="" />
+                                <img src="/images/logo.png" alt="" />
                             </div>
                             <p>Suspendisse velit ante, aliquet vel adipi cing auctor, tincidunt a diam orem ipsum.</p>
                             <div class="contact">
@@ -132,14 +132,14 @@
                         <div class="widget">
                             <div class="widget-title"><h4>OUR FLICKR</h4></div>
                             <div class="gallery-widget lightbox">
-                                <div class="col-md-3"><a href="images/resource/flickr2.jpg"><img src="images/resource/flickr1.jpg" alt="" /></a></div>
-                                <div class="col-md-3"><a href="images/resource/flickr2.jpg"><img src="images/resource/flickr2.jpg" alt="" /></a></div>
-                                <div class="col-md-3"><a href="images/resource/flickr3.jpg"><img src="images/resource/flickr3.jpg" alt="" /></a></div>
-                                <div class="col-md-3"><a href="images/resource/flickr4.jpg"><img src="images/resource/flickr4.jpg" alt="" /></a></div>
-                                <div class="col-md-3"><a href="images/resource/flickr5.jpg"><img src="images/resource/flickr5.jpg" alt="" /></a></div>
-                                <div class="col-md-3"><a href="images/resource/flickr6.jpg"><img src="images/resource/flickr6.jpg" alt="" /></a></div>
-                                <div class="col-md-3"><a href="images/resource/flickr1.jpg"><img src="images/resource/flickr1.jpg" alt="" /></a></div>
-                                <div class="col-md-3"><a href="images/resource/flickr2.jpg"><img src="images/resource/flickr2.jpg" alt="" /></a></div>
+                                <div class="col-md-3"><a href="/images/resource/flickr2.jpg"><img src="/images/resource/flickr1.jpg" alt="" /></a></div>
+                                <div class="col-md-3"><a href="/images/resource/flickr2.jpg"><img src="/images/resource/flickr2.jpg" alt="" /></a></div>
+                                <div class="col-md-3"><a href="/images/resource/flickr3.jpg"><img src="/images/resource/flickr3.jpg" alt="" /></a></div>
+                                <div class="col-md-3"><a href="/images/resource/flickr4.jpg"><img src="/images/resource/flickr4.jpg" alt="" /></a></div>
+                                <div class="col-md-3"><a href="/images/resource/flickr5.jpg"><img src="/images/resource/flickr5.jpg" alt="" /></a></div>
+                                <div class="col-md-3"><a href="/images/resource/flickr6.jpg"><img src="/images/resource/flickr6.jpg" alt="" /></a></div>
+                                <div class="col-md-3"><a href="/images/resource/flickr1.jpg"><img src="/images/resource/flickr1.jpg" alt="" /></a></div>
+                                <div class="col-md-3"><a href="/images/resource/flickr2.jpg"><img src="/images/resource/flickr2.jpg" alt="" /></a></div>
                             </div>
                         </div><!-- GALLERY WIDGET -->
                         <div class="widget">
@@ -153,7 +153,7 @@
                         <div class="widget">
                             <div class="widget-title"><h4>LATEST EVENT</h4></div>
                             <div class="animal-event">
-                                <div class="animal-img"><img src="images/resource/animal-event1.jpg" alt="" /><span><strong>12</strong>Dec 2014</span></div>
+                                <div class="animal-img"><img src="/images/resource/animal-event1.jpg" alt="" /><span><strong>12</strong>Dec 2014</span></div>
                                 <div class="animal-detail">
                                     <h4><a href="#" title="">Offers And General Visual</a></h4>
                                     <p>Aenean leo vene quam. Pellntes iqu ornare sem eiusmodte venenatis. Pellntes ique ornew vestibum...</p>
@@ -165,7 +165,7 @@
                                 </div>
                             </div>
                             <div class="animal-event">
-                                <div class="animal-img"><img src="images/resource/animal-event1.jpg" alt="" /><span><strong>12</strong>Dec 2014</span></div>
+                                <div class="animal-img"><img src="/images/resource/animal-event1.jpg" alt="" /><span><strong>12</strong>Dec 2014</span></div>
                                 <div class="animal-detail">
                                     <h4><a href="#" title="">Offers And General Visual</a></h4>
                                     <p>Aenean leo vene quam. Pellntes iqu ornare sem eiusmodte venenatis. Pellntes ique ornew vestibum...</p>
@@ -177,7 +177,7 @@
                                 </div>
                             </div>
                             <div class="animal-event">
-                                <div class="animal-img"><img src="images/resource/animal-event1.jpg" alt="" /><span><strong>12</strong>Dec 2014</span></div>
+                                <div class="animal-img"><img src="/images/resource/animal-event1.jpg" alt="" /><span><strong>12</strong>Dec 2014</span></div>
                                 <div class="animal-detail">
                                     <h4><a href="#" title="">Offers And General Visual</a></h4>
                                     <p>Aenean leo vene quam. Pellntes iqu ornare sem eiusmodte venenatis. Pellntes ique ornew vestibum...</p>

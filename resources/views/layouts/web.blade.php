@@ -8,22 +8,22 @@
         <!--CSRF TOKEN-->
         <meta name="csrf-token" content="{{ csrf_token() }}"/>
 		<!-- Google Fonts -->
-		<link href='fonts.googleapis.com/css5a1b.css?family=Noto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-		<link href='fonts.googleapis.com/css117f.css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='/fonts.googleapis.com/css5a1b.css?family=Noto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='/fonts.googleapis.com/css117f.css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		<!-- Styles -->
-		<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
-		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" href="css/owl-carousel.css" type="text/css" />
-		<link rel="stylesheet" href="css/mediaelementplayer.min.css" />
-		<link href="css/revolution.css" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
-		<link rel="stylesheet" href="css/style.css" type="text/css" />
-		<link href="css/responsive.css" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" type="text/css" href="css/colors/red.css" title="color1" />
-		<link rel="alternate stylesheet" type="text/css" href="css/colors/wedgewood.css" title="color2" />
-		<link rel="alternate stylesheet" type="text/css" href="css/colors/blue.css" title="color3" />
-		<link rel="alternate stylesheet" type="text/css" href="css/colors/green.css" title="color4" />
-		<link rel="alternate stylesheet" type="text/css" href="css/colors/darkgreen.css" title="color5" />
+		<link href="/css/font-awesome.css" rel="stylesheet" type="text/css" />
+		<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="/css/owl-carousel.css" type="text/css" />
+		<link rel="stylesheet" href="/css/mediaelementplayer.min.css" />
+		<link href="/css/revolution.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/css/settings.css" media="screen" />
+		<link rel="stylesheet" href="/css/style.css" type="text/css" />
+		<link href="/css/responsive.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/css/colors/red.css" title="color1" />
+		<link rel="alternate stylesheet" type="text/css" href="/css/colors/wedgewood.css" title="color2" />
+		<link rel="alternate stylesheet" type="text/css" href="/css/colors/blue.css" title="color3" />
+		<link rel="alternate stylesheet" type="text/css" href="/css/colors/green.css" title="color4" />
+		<link rel="alternate stylesheet" type="text/css" href="/css/colors/darkgreen.css" title="color5" />
 </head>
 <body>
 <div class="theme-layout">
@@ -72,7 +72,7 @@
 				<nav class="style1">
 					<div class="container">
 						<div class="logo">
-							<a href="#" title=""><img src="images/logo.png" alt="" /></a>
+							<a href="#" title=""><img src="/images/logo.png" alt="" /></a>
 						</div>
 						<!--- LOGO -->
 						<ul>
@@ -135,7 +135,7 @@
                 </div><!-- Responsive Social -->
             </div><!-- Responsive Extras -->
             <div class="responisve-bar">
-                <div class="responsive-logo"><a href="#" title=""><img src="images/logo.png" alt="The the house of destiny church logo" /></a></div>
+                <div class="responsive-logo"><a href="#" title=""><img src="/images/logo.png" alt="The the house of destiny church logo" /></a></div>
                 <span class="responsive-btn"><i class="fa fa-list"></i></span>
             </div>
         </div><!-- Responsive Header -->
@@ -157,13 +157,13 @@
         </div>
         <footer>
             <div class="block blackish">
-            <div class="parallax" style="background:url(images/parallax5.jpg);"></div>
+            <div class="parallax" style="background:url(/images/parallax5.jpg);"></div>
                 <div class="container">
                     <div class="row"> 
                         <div class="col-md-4">
                             <div class="widget">
                                 <div class="about">
-                                    <img src="images/logo.png" alt="" />
+                                    <img src="/images/logo.png" alt="" />
                                     <span>We Give Best Services</span>
                                     <p>Homemade cream cheese mints These are amazing! Made them last Christmas!!- must try!</p>
                                     <div class="contact">
@@ -201,13 +201,13 @@
                                 <div class="widget-title"><h4>Recent Blog</h4></div>
                                 <div class="remove-ext">
                                     <div class="widget-blog">
-                                        <div class="widget-blog-img"><img src="images/resource/widget-blog.jpg" alt="" /></div>
+                                        <div class="widget-blog-img"><img src="/images/resource/widget-blog.jpg" alt="" /></div>
                                         <h6><a href="blog-single.html" title=""> Consectetur Adipisicing.</a></h6>
                                         <p>Homemade cream cheese mints These are amazing!Christmas!!- must try!</p>
                                         <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
                                     </div><!-- WIDGET BLOG -->
                                     <div class="widget-blog">
-                                        <div class="widget-blog-img"><img src="images/resource/widget-blog2.jpg" alt="" /></div>
+                                        <div class="widget-blog-img"><img src="/images/resource/widget-blog2.jpg" alt="" /></div>
                                         <h6><a href="blog-single.html" title=""> Consectetur Adipisicing.</a></h6>
                                         <p>Homemade cream cheese mints These are amazing!Christmas!!- must try!</p>
                                         <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
@@ -268,16 +268,16 @@
         </div>
         </div>
             <!-- SCRIPTS-->
-            <script type="text/javascript" src="js/modernizr.custom.17475.js"></script>
-            <script src="js/jquery.1.10.2.js" type="text/javascript"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script src="js/jquery.poptrox.min.js" type="text/javascript"></script>
-            <script src="js/enscroll-0.5.2.min.js"></script>
-            <script src="js/owl.carousel.min.js"></script>
-            <script src="js/mediaelement-and-player.min.js"></script>
-            <script src="js/script.js"></script>
-            <script src="js/styleswitcher.js"></script>
-            <script type="text/javascript" src="js/jquery.downCount.js"></script> 
+            <script type="text/javascript" src="/js/modernizr.custom.17475.js"></script>
+            <script src="/js/jquery.1.10.2.js" type="text/javascript"></script>
+            <script src="/js/bootstrap.min.js"></script>
+            <script src="/js/jquery.poptrox.min.js" type="text/javascript"></script>
+            <script src="/js/enscroll-0.5.2.min.js"></script>
+            <script src="/js/owl.carousel.min.js"></script>
+            <script src="/js/mediaelement-and-player.min.js"></script>
+            <script src="/js/script.js"></script>
+            <script src="/js/styleswitcher.js"></script>
+            <script type="text/javascript" src="/js/jquery.downCount.js"></script> 
             <script type="text/javascript">
             $(document).ready(function() {
                 $(".pastors-carousel").owlCarousel({
@@ -331,11 +331,11 @@
                 $('audio,video').mediaelementplayer();
             </script>
             <!-- SLIDER REVOLUTION -->
-            <script type="text/javascript" src="{{asset('js/revolution/jquery.themepunch.tools.min.js')}}"></script>
-            <script type="text/javascript" src="{{asset('js/revolution/jquery.themepunch.revolution.min.js')}}"></script>
-            <script type="text/javascript" src="{{asset('js/revolution/extensions/revolution.extension.slideanims.min.js')}}"></script>
-            <script type="text/javascript" src="{{asset('js/revolution/extensions/revolution.extension.layeranimation.min.js')}}"></script>
-            <script type="text/javascript" src="{{asset('js/revolution/extensions/revolution.extension.navigation.min.js')}}"></script>
+            <script type="text/javascript" src="{{asset('/js/revolution/jquery.themepunch.tools.min.js')}}"></script>
+            <script type="text/javascript" src="{{asset('/js/revolution/jquery.themepunch.revolution.min.js')}}"></script>
+            <script type="text/javascript" src="{{asset('/js/revolution/extensions/revolution.extension.slideanims.min.js')}}"></script>
+            <script type="text/javascript" src="{{asset('/js/revolution/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+            <script type="text/javascript" src="{{asset('/js/revolution/extensions/revolution.extension.navigation.min.js')}}"></script>
             <script type="text/javascript">
                 jQuery(document).ready(function() {
                     jQuery("#slider1").revolution({
