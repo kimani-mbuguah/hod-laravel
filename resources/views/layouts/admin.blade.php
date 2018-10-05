@@ -201,9 +201,7 @@
 
                                 <a class="nav-link" href="#"><i class="fa fa -cog"></i>Settings</a>
 
-                                <a class="nav-link" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                <a class="nav-link" href="/logout">
                                         <i class="fa fa-power -off"></i>{{ __('Logout') }} 
                                 </a>
                         </div>
@@ -255,6 +253,7 @@
             } );
         } )( jQuery );
     </script>
+    <script src="/assets/js/main.js"></script>
 
 </body>
 </html>
