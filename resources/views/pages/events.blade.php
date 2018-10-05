@@ -88,15 +88,6 @@
                             </div>
                         </div><!-- VIDEO -->
                         <div class="widget">
-                            <div class="widget-title"><h4>META</h4></div>
-                            <ul>
-                                <li><a href="blog.html" title=""><i class="fa fa-hand-o-right"></i>Log in</a></li>
-                                <li><a href="blog.html" title=""><i class="fa fa-hand-o-right"></i>Entries RSS</a></li>
-                                <li><a href="blog.html" title=""><i class="fa fa-hand-o-right"></i>Comments RSS</a></li>
-                                <li><a href="blog.html" title=""><i class="fa fa-hand-o-right"></i>Wordpress.org</a></li>
-                            </ul>
-                        </div><!-- META -->
-                        <div class="widget">
                             <div class="widget-title"><h4>LATEST EVENT</h4></div>
                             <div class="animal-event simple">
                                 <div class="animal-detail">
