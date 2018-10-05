@@ -18,6 +18,10 @@ Route::get('/blog','PagesController@blog');
 Route::get('/sermons','PagesController@blog');
 Route::get('/word','PagesController@sermons');
 Route::get('/addevent','PagesController@addevent');
+Route::post('/foo', function () {
+    echo 1;
+    return;
+});
 
 Route::resource('events','EventsController');
 

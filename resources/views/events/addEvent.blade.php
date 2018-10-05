@@ -32,51 +32,67 @@
                         <strong>Create a new event</strong>
                     </div>
                     <div class="card-body card-block">
-                    <form method="POST" action="{{ action('EventsController@store')}}">
-                        <div class="form-group">
-                            <label class=" form-control-label">Event Name</label>
-                            <div class="input-group">
-                                <div class="input-group-addon"><i class="fa fa-group"></i></div>
-                                <input class="form-control">
+                        {!! Form::open(['action' => 'EventsController@store','method' => 'POST']) !!}
+                            <div class="form-group">
+                                {{Form::label('event name', 'Event Name', ['class' => 'form-control-label'])}}
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-group"></i></div>
+                                    {{Form::text('title', '', ['class' => 'form-control', 'placeholder'=>'Event Title'])}}
+                                </div>
+                                <small class="form-text text-muted">ex. Youth Connect</small>
                             </div>
-                            <small class="form-text text-muted">ex. Youth Connect</small>
-                        </div>
-                        <div class="form-group">
-                            <label class=" form-control-label">Event Date</label>
-                            <div class="input-group">
-                                <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                <input class="form-control">
+                            <div class="form-group">
+                                {{Form::label('event image', 'Event Image', ['class' => 'form-control-label'])}}
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                    {{Form::file('image')}}
+                                </div>
+                                <small class="form-text text-muted">ex. Youth Connect</small>
                             </div>
-                            <small class="form-text text-muted">ex. 25 Dec, 2018</small>
-                        </div>
-                        <div class="form-group">
-                            <label class=" form-control-label">Event Starting Time</label>
-                            <div class="input-group">
-                                <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
-                                <input class="form-control">
+                            <div class="form-group">
+                                {{Form::label('event date', 'Event Date', ['class' => 'form-control-label'])}}
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                    {{Form::text('date', '', ['class' => 'form-control', 'placeholder'=>'Event Date'])}}
+                                </div>
+                                <small class="form-text text-muted">ex. 25 Dec, 2018</small>
                             </div>
-                            <small class="form-text text-muted">ex. 8:00 A.M</small>
-                        </div>
-                        <div class="form-group">
-                            <label class=" form-control-label">Event Location</label>
-                            <div class="input-group">
-                                <div class="input-group-addon"><i class="fa fa-compass"></i></div>
-                                <input class="form-control">
+                            <div class="form-group">
+                                {{Form::label('event starting time', 'Event Starting Time', ['class' => 'form-control-label'])}}
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
+                                    {{Form::text('starting_time', '', ['class' => 'form-control', 'placeholder'=>'Event Starting Time'])}}
+                                </div>
+                                <small class="form-text text-muted">ex. 8:00 A.M</small>
                             </div>
-                            <small class="form-text text-muted">ex. House of Destiny Church</small>
-                        </div>
-                        <div class="form-group">
-                            <label class=" form-control-label">Event Description</label>
-                            <div class="input-group">
-                                <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
-                                <textarea class="form-control" rows="5"></textarea>
+                            <div class="form-group">
+                                {{Form::label('event ending time', 'Event Ending Time', ['class' => 'form-control-label'])}}
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
+                                    {{Form::text('starting_ending', '', ['class' => 'form-control', 'placeholder'=>'Event Ending Time'])}}
+                                </div>
+                                <small class="form-text text-muted">ex. 8:00 P.M</small>
                             </div>
-                            <small class="form-text text-muted">ex. Give details about this event</small>
-                        </div>
-                        <div class="fom-group">
-                            <button type="submit" class="btn btn-outline-primary btn-lg btn-block">Create Event</button>
-                        </div>
-                    </form>
+                            <div class="form-group">
+                                {{Form::label('event location', 'Event Location', ['class' => 'form-control-label'])}}
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-compass"></i></div>
+                                    {{Form::text('location', '', ['class' => 'form-control', 'placeholder'=>'Event Location'])}}
+                                </div>
+                                <small class="form-text text-muted">ex. House of Destiny Church</small>
+                            </div>
+                            <div class="form-group">
+                                {{Form::label('event description', 'Event Description', ['class' => 'form-control-label'])}}
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-book"></i></div>
+                                    {{Form::textarea('description', '', ['class' => 'form-control', 'placeholder'=>'Event Description','rows'=>'6'])}}
+                                </div>
+                                <small class="form-text text-muted">ex. House of Destiny Church</small>
+                            </div>
+                            <div class="fom-group">
+                                {{Form::submit('Create Event',['class'=>'btn btn-outline-primary btn-lg btn-block'])}}
+                            </div>
+                        {!! Form::close() !!}
                     </div>
                 </div>
             </div>
