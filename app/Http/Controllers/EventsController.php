@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Event;
 
 class EventsController extends Controller
 {
@@ -13,7 +14,8 @@ class EventsController extends Controller
      */
     public function index()
     {
-        //
+        $events = Event::all();
+        return view('pages.events')->with('events',$events);
     }
 
     /**
@@ -45,7 +47,8 @@ class EventsController extends Controller
      */
     public function show($id)
     {
-        //
+        $event = Event::find($id);
+        return view('events.eventSingle')->with('event',$event);
     }
 
     /**

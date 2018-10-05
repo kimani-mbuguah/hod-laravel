@@ -17,6 +17,27 @@
                     <div class="col-md-8 column">
                         <div class="events-gridview remove-ext">  
                             <div class="row">
+                                @if(count($events) >0 )
+                                    @foreach ($events as $event)
+                                    <div class="col-md-6">
+                                        <div class="category-box">
+                                            <div class="category-block">
+                                                <div class="category-img">
+                                                        <img src="images/resource/event1.jpg" alt="" />
+                                                    <ul>
+                                                        <li class="date"><a href="event-single.html" title=""><i class="fa fa-calendar-o"></i> {{$event->created_at}}</a></li>
+                                                        <li class="time"><a href="event-single.html" title=""><i class="fa fa-clock-o"></i> {{$event->start_time}}</a></li>
+                                                    </ul>
+                                                </div>
+                                            <h3><a href="/events/{{$event->id}}" title="{{$event->title}}">{{$event->title}}</a></h3>
+                                                <span><i class="fa fa-map-marker"></i> {{$event->location}}</span>
+                                            </div>						
+                                        </div><!-- EVENTS -->
+                                    </div>
+                                    @endforeach    
+                                @else
+                                    <h3>No posts available</h3>
+                                @endif
                                 <div class="col-md-6">
                                     <div class="category-box">
                                         <div class="category-block">
