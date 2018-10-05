@@ -32,6 +32,7 @@
                         <strong>Create a new event</strong>
                     </div>
                     <div class="card-body card-block">
+                    <form method="POST" action="{{ action('EventsController@store')}}">
                         <div class="form-group">
                             <label class=" form-control-label">Event Name</label>
                             <div class="input-group">
@@ -72,6 +73,10 @@
                             </div>
                             <small class="form-text text-muted">ex. Give details about this event</small>
                         </div>
+                        <div class="fom-group">
+                            <button type="submit" class="btn btn-outline-primary btn-lg btn-block">Create Event</button>
+                        </div>
+                    </form>
                     </div>
                 </div>
             </div>

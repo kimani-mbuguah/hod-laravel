@@ -11,13 +11,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="The House of Destiny Church Administrator">
         <link rel="apple-touch-icon" href="apple-icon.png">
-        <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="assets/css/normalize.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/themify-icons.css">
-        <link rel="stylesheet" href="assets/css/flag-icon.min.css">
-        <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="stylesheet" href="/assets/css/normalize.css">
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/assets/css/themify-icons.css">
+        <link rel="stylesheet" href="/assets/css/flag-icon.min.css">
+        <link rel="stylesheet" href="/assets/css/cs-skin-elastic.css">
         <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
         <link rel="stylesheet" href="assets/scss/style.css">
     

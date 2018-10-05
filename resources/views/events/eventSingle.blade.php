@@ -3,11 +3,11 @@
 <div class="page-top">
         <div class="parallax" style="background:url(/images/parallax1.jpg);"></div>	
         <div class="container"> 
-            <h1>EVENT <span>SINGLE</span></h1>
+            <h1><span>{{$event->title}}</span></h1>
             <ul>
                 <li><a href="/" title="">Home</a></li>
                 <li><a href="/events" title="">Events</a></li>
-                <li><a href="#" title="">Events Single Page</a></li>
+                <li><a href="#" title="">{{$event->title}}</a></li>
             </ul>
         </div>
     </div><!--- PAGE TOP -->
