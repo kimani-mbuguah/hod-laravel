@@ -164,13 +164,13 @@
                             <div class="widget">
                                 <div class="about">
                                     <img src="/images/logo.png" alt="" />
-                                    <span>We Give Best Services</span>
-                                    <p>Homemade cream cheese mints These are amazing! Made them last Christmas!!- must try!</p>
+                                    <span>THE HOUSE OF DESTINY CHURCH</span>
+                                    <p>STEP BY STEP TOWARDS OUR DESTINY IN CHRIST
                                     <div class="contact">
                                         <ul>
-                                            <li><span><i class="fa fa-phone"></i>Phone :</span> ( +185 557 89 89 ) ( +185 557 89 89 )</li>
-                                            <li><span><i class="fa fa-envelope"></i>Email:</span> Contactchurch@simple.com</li>
-                                            <li><span><i class="fa fa-home"></i>Address:</span> Home Fronts 27# street 7 Road Green</li>
+                                            <li><span><i class="fa fa-phone"></i>Phone :</span> ( 254-705-000-050 ) ( +185 557 89 89 )</li>
+                                            <li><span><i class="fa fa-envelope"></i>Email:</span> hello@houseofdestinykerugoya.org</li>
+                                            <li><span><i class="fa fa-home"></i>Address:</span>Kutus-Kerugoya Road, Kerugoya Kenya</li>
                                         </ul>
                                     </div>							
                                     <ul class="social-media">
@@ -202,15 +202,15 @@
                                 <div class="remove-ext">
                                     <div class="widget-blog">
                                         <div class="widget-blog-img"><img src="/images/resource/widget-blog.jpg" alt="" /></div>
-                                        <h6><a href="blog-single.html" title=""> Consectetur Adipisicing.</a></h6>
+                                        <h6><a href="blog-single.html" title=""> House of Destiny</a></h6>
                                         <p>Homemade cream cheese mints These are amazing!Christmas!!- must try!</p>
-                                        <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
+                                        <span><i class="fa fa-calendar-o"></i> November 01, 2018</span>
                                     </div><!-- WIDGET BLOG -->
                                     <div class="widget-blog">
                                         <div class="widget-blog-img"><img src="/images/resource/widget-blog2.jpg" alt="" /></div>
-                                        <h6><a href="blog-single.html" title=""> Consectetur Adipisicing.</a></h6>
+                                        <h6><a href="blog-single.html" title=""> House of Destiny</a></h6>
                                         <p>Homemade cream cheese mints These are amazing!Christmas!!- must try!</p>
-                                        <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
+                                        <span><i class="fa fa-calendar-o"></i> November 01, 2018</span>
                                     </div><!-- WIDGET BLOG -->
                                 </div>
                             </div>
