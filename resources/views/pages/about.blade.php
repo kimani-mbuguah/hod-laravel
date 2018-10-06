@@ -131,7 +131,7 @@
 									<img src="images/resource/pastor1.jpg" alt="" />
 								</div>
 								<div class="col-md-9">
-									<h4>GARY HARREL</h4>
+									<h4>PASTOR FRANK</h4>
 									<span>DIRECTOR-BASELINE</span>
 									<p>Ut ac eleifend mauris, ac porta lacus. Sed pharetra magna massa, sit amet condimentum risus congue ut. Duis eu neque convallis, auctor lacus sed, tincidunt arcu. Aliquam vitae hendrerit dolor. Ut ac eleifend mauris, ac porta lacus. Sed pharetra magna massa, sit amet condimentum risus congue ut. Ut ac eleifend mauris, ac porta lacus. Sed pharetra magna massa, sit amet condimentum risus congue ut. Duis eu neque convallis, auctor lacus sed, tincidunt arcu. </p>
 									<ul class="sermon-media">
@@ -151,7 +151,7 @@
 									<img src="images/resource/pastor2.jpg" alt="" />
 								</div>
 								<div class="col-md-9">
-									<h4>GARY HARREL</h4>
+									<h4>PASTOR FRANK</h4>
 									<span>DIRECTOR-BASELINE</span>
 									<p>Ut ac eleifend mauris, ac porta lacus. Sed pharetra magna massa, sit amet condimentum risus congue ut. Duis eu neque convallis, auctor lacus sed, tincidunt arcu. Aliquam vitae hendrerit dolor. Ut ac eleifend mauris, ac porta lacus. Sed pharetra magna massa, sit amet condimentum risus congue ut. Ut ac eleifend mauris, ac porta lacus. Sed pharetra magna massa, sit amet condimentum risus congue ut. Duis eu neque convallis, auctor lacus sed, tincidunt arcu. </p>
 									<ul class="sermon-media">
@@ -177,7 +177,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="title">
-						<span>Pellent Esque Tellus</span>
+						<span>House of Destiny</span>
 						<h2>MEET <span>OUR STAFF</span></h2>
 					</div>
 					<div class="row">
@@ -188,9 +188,9 @@
 										<img src="images/resource/team5.jpg" alt="" />
 									</div>
 									<div class="member-detail">
-										<h3><a href="team-single.html" title="">BOB SMITH</a></h3>
-										<span>SENIOR PASTOR</span>
-										<p>Lorem ipsum dolor sit a onsec tetiri adien tashn commodo leg tashn dol tashin tyons piscin.</p>
+										<h3><a href="team-single.html" title="">PASTOR FRANK MBUGUA</a></h3>
+										<span>LEAD PASTOR</span>
+										<p>Sample story of the team member, the ministries they head, their interests, something funny about them and so on</p>
 									</div>
 								</div>
 							</div><!-- MEMBER -->
@@ -200,9 +200,9 @@
 										<img src="images/resource/team4.jpg" alt="" />
 									</div>
 									<div class="member-detail">
-										<h3><a href="team-single.html" title="">LEOMA KITN</a></h3>
-										<span>SENIOR PASTOR</span>
-										<p>Lorem ipsum dolor sit a onsec tetiri adien tashn commodo leg tashn dol tashin tyons piscin.</p>
+										<h3><a href="team-single.html" title="">PASTOR CAROLINE FRANK</a></h3>
+										<span>LEAD PASTOR</span>
+										<p>Sample story of the team member, the ministries they head, their interests, something funny about them and so on</p>
 									</div>
 								</div>
 							</div><!-- MEMBER -->
@@ -212,9 +212,9 @@
 										<img src="images/resource/team5.jpg" alt="" />
 									</div>
 									<div class="member-detail">
-										<h3><a href="team-single.html" title="">RIFF KALE</a></h3>
+										<h3><a href="team-single.html" title="">PASTOR ELIUD MBUGUA</a></h3>
 										<span>SENIOR PASTOR</span>
-										<p>Lorem ipsum dolor sit a onsec tetiri adien tashn commodo leg tashn dol tashin tyons piscin.</p>
+										<p>Sample story of the team member, the ministries they head, their interests, something funny about them and so on</p>
 									</div>
 								</div>
 							</div><!-- MEMBER -->
@@ -224,9 +224,9 @@
 										<img src="images/resource/team4.jpg" alt="" />
 									</div>
 									<div class="member-detail">
-										<h3><a href="team-single.html" title="">TOM FOBE</a></h3>
+										<h3><a href="team-single.html" title="">JOHNY MOG</a></h3>
 										<span>SENIOR PASTOR</span>
-										<p>Lorem ipsum dolor sit a onsec tetiri adien tashn commodo leg tashn dol tashin tyons piscin.</p>
+										<p>Sample story of the team member, the ministries they head, their interests, something funny about them and so on</p>
 									</div>
 								</div>
 							</div><!-- MEMBER -->
@@ -236,9 +236,9 @@
 										<img src="images/resource/team5.jpg" alt="" />
 									</div>
 									<div class="member-detail">
-										<h3><a href="team-single.html" title="">SEIMN LINEO</a></h3>
+										<h3><a href="team-single.html" title="">WILSON UTQ</a></h3>
 										<span>SENIOR PASTOR</span>
-										<p>Lorem ipsum dolor sit a onsec tetiri adien tashn commodo leg tashn dol tashin tyons piscin.</p>
+										<p>Sample story of the team member, the ministries they head, their interests, something funny about them and so on</p>
 									</div>
 								</div>
 							</div><!-- MEMBER -->
@@ -248,9 +248,9 @@
 										<img src="images/resource/team6.jpg" alt="" />
 									</div>
 									<div class="member-detail">
-										<h3><a href="team-single.html" title="">KOJEO SLORM</a></h3>
+										<h3><a href="team-single.html" title="">KAMAA KAMAU</a></h3>
 										<span>SENIOR PASTOR</span>
-										<p>Lorem ipsum dolor sit a onsec tetiri adien tashn commodo leg tashn dol tashin tyons piscin.</p>
+										<p>Sample story of the team member, the ministries they head, their interests, something funny about them and so on</p>
 									</div>
 								</div>
 							</div><!-- MEMBER -->
