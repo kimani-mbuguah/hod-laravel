@@ -44,23 +44,23 @@
                             The House Of Destiny Church is a lively, growing congregation that has been serving in Kerugoya, Kenya for four years now. We worship every Sunday from 10:00 A.M in our sanctuary in Kerugoya Town next to Facing Mt. Kenya Boys' School. We welcome all to come, visit, worship and see what The House Of Destiny Church is all about. You are invited to become part of our Church community...
                         </p>
                         <br>
-                        <a class="button" href="about.html" title="">Learn More</a>
+                        <a class="button" href="/about" title="">Learn More</a>
                         <ul class="nav nav-tabs" id="myTab">
-                            <li class="col-md-4 active"><a data-toggle="tab" href="#image1"><img src="images/resource/about1.jpg" alt="" /></a></li>
+                            <li class="col-md-4 active"><a data-toggle="tab" href="#image1"><img src="images/resource/about2.jpg" alt="" /></a></li>
                             <li class="col-md-4"><a data-toggle="tab" href="#image2"><img src="images/resource/about2.jpg" alt="" /></a></li>
-                            <li class="col-md-4"><a data-toggle="tab" href="#image3"><img src="images/resource/about3.jpg" alt="" /></a></li>
+                            <li class="col-md-4"><a data-toggle="tab" href="#image3"><img src="images/resource/about2.jpg" alt="" /></a></li>
                         </ul>
                     </div>
                     <div class="col-md-6 column">
                         <div class="tab-content" id="myTabContent">
                             <div id="image1" class="tab-pane fade in active">
-                                <img src="images/resource/about1-big.jpg" alt="" />
+                                <img src="images/resource/about2-big.jpg" alt="" />
                             </div>
                             <div id="image2" class="tab-pane fade">
                                 <img src="images/resource/about2-big.jpg" alt="" />
                             </div>
                             <div id="image3" class="tab-pane fade">
-                                <img src="images/resource/about3-big.jpg" alt="" />
+                                <img src="images/resource/about2-big.jpg" alt="" />
                             </div>
                         </div>
                     </div>
@@ -468,11 +468,10 @@
                                         <img src="images/resource/gallery-large-1.jpg" alt="" />
                                         <div class="gallery-title">
                                             <i class="fa fa-picture-o"></i>
-                                            <h3>Christ Church Picture</h3>
+                                            <h3>House of Destiny</h3>
                                         </div>
                                         <ul>
-                                            <li><a data-rel="prettyPhoto[gallery1]" href="http://placehold.it/500x500" title=""><img src="images/resource/gallery-thumb1.jpg" alt="" /></a></li>
-                                            <li><a data-rel="prettyPhoto[gallery1]" href="http://placehold.it/500x500" title=""><img src="images/resource/gallery-thumb2.jpg" alt="" /></a></li>
+                                            <li><p>The house of destiny church. Sample description of this picture</p></li>
                                         </ul>
                                     </div><!-- GALLERY ITEM -->
                                 </div>
@@ -481,11 +480,10 @@
                                         <img src="images/resource/gallery-large-2.jpg" alt="" />
                                         <div class="gallery-title">
                                             <i class="fa fa-picture-o"></i>
-                                            <h3>Edward III’s tomb, Westminster Abbey</h3>
+                                            <h3>House of Destiny</h3>
                                         </div>
                                         <ul>
-                                            <li><a data-rel="prettyPhoto[gallery2]" href="http://placehold.it/500x500" title=""><img src="images/resource/gallery-thumb1.jpg" alt="" /></a></li>
-                                            <li><a data-rel="prettyPhoto[gallery2]" href="http://placehold.it/500x500" title=""><img src="images/resource/gallery-thumb2.jpg" alt="" /></a></li>
+                                            <li><p>The house of destiny church. Sample description of this picture</p></li>
                                         </ul>
                                     </div><!-- GALLERY ITEM -->
                                 </div>
@@ -494,11 +492,10 @@
                                         <img src="images/resource/gallery-large-3.jpg" alt="" />
                                         <div class="gallery-title">
                                             <i class="fa fa-picture-o"></i>
-                                            <h3>Church Latest Event Picture</h3>
+                                            <h3>House of Destiny</h3>
                                         </div>
                                         <ul>
-                                            <li><a data-rel="prettyPhoto[gallery3]" href="http://placehold.it/500x500" title=""><img src="images/resource/gallery-thumb1.jpg" alt="" /></a></li>
-                                            <li><a data-rel="prettyPhoto[gallery3]" href="http://placehold.it/500x500" title=""><img src="images/resource/gallery-thumb2.jpg" alt="" /></a></li>
+                                            <li><p>The house of destiny church. Sample description of this picture</p></li>
                                         </ul>
                                     </div><!-- GALLERY ITEM -->
                                 </div>
@@ -507,11 +504,10 @@
                                         <img src="images/resource/gallery-large-4.jpg" alt="" />
                                         <div class="gallery-title">
                                             <i class="fa fa-picture-o"></i>
-                                            <h3>Bath Abbey </h3>
+                                            <h3>House of Destiny </h3>
                                         </div>
                                         <ul>
-                                            <li><a data-rel="prettyPhoto[gallery4]" href="http://placehold.it/500x500" title=""><img src="images/resource/gallery-thumb1.jpg" alt="" /></a></li>
-                                            <li><a data-rel="prettyPhoto[gallery4]" href="http://placehold.it/500x500" title=""><img src="images/resource/gallery-thumb2.jpg" alt="" /></a></li>
+                                            <li><p>The house of destiny church. Sample description of this picture</p></li>
                                         </ul>
                                     </div><!-- GALLERY ITEM -->
                                 </div>
@@ -520,11 +516,10 @@
                                         <img src="images/resource/gallery-large-5.jpg" alt="" />
                                         <div class="gallery-title">
                                             <i class="fa fa-picture-o"></i>
-                                            <h3>A Holistic Approach Nurtu</h3>
+                                            <h3>House of Destiny</h3>
                                         </div>
                                         <ul>
-                                            <li><a data-rel="prettyPhoto[gallery5]" href="http://placehold.it/500x500" title=""><img src="images/resource/gallery-thumb1.jpg" alt="" /></a></li>
-                                            <li><a data-rel="prettyPhoto[gallery5]" href="http://placehold.it/500x500" title=""><img src="images/resource/gallery-thumb2.jpg" alt="" /></a></li>
+                                            <li><p>The house of destiny church. Sample description of this picture</p></li>
                                         </ul>
                                     </div><!-- GALLERY ITEM -->
                                 </div>
@@ -533,11 +528,10 @@
                                         <img src="images/resource/gallery-large-6.jpg" alt="" />
                                         <div class="gallery-title">
                                             <i class="fa fa-picture-o"></i>
-                                            <h3>Inside the main tower, Westminster Abbey</h3>
+                                            <h3>House of Destiny</h3>
                                         </div>
                                         <ul>
-                                            <li><a data-rel="prettyPhoto[gallery6]" href="http://placehold.it/500x500" title=""><img src="images/resource/gallery-thumb1.jpg" alt="" /></a></li>
-                                            <li><a data-rel="prettyPhoto[gallery6]" href="http://placehold.it/500x500" title=""><img src="images/resource/gallery-thumb2.jpg" alt="" /></a></li>
+                                            <li><p>The house of destiny church. Sample description of this picture</p></li>
                                         </ul>
                                     </div><!-- GALLERY ITEM -->
                                 </div>
@@ -546,11 +540,10 @@
                                         <img src="images/resource/gallery-large-7.jpg" alt="" />
                                         <div class="gallery-title">
                                             <i class="fa fa-picture-o"></i>
-                                            <h3>Westminster Abbey</h3>
+                                            <h3>House of Destiny</h3>
                                         </div>
                                         <ul>
-                                            <li><a data-rel="prettyPhoto[gallery7]" href="http://placehold.it/500x500" title=""><img src="images/resource/gallery-thumb1.jpg" alt="" /></a></li>
-                                            <li><a data-rel="prettyPhoto[gallery7]" href="http://placehold.it/500x500" title=""><img src="images/resource/gallery-thumb2.jpg" alt="" /></a></li>
+                                            <li><p>The house of destiny church. Sample description of this picture</p></li>
                                         </ul>
                                     </div><!-- GALLERY ITEM -->
                                 </div>
@@ -559,11 +552,10 @@
                                         <img src="images/resource/gallery-large-8.jpg" alt="" />
                                         <div class="gallery-title">
                                             <i class="fa fa-picture-o"></i>
-                                            <h3>Hexham Abbey, Northumberland</h3>
+                                            <h3>House of Destiny</h3>
                                         </div>
                                         <ul>
-                                            <li><a data-rel="prettyPhoto[gallery8]" href="http://placehold.it/500x500" title=""><img src="images/resource/gallery-thumb1.jpg" alt="" /></a></li>
-                                            <li><a data-rel="prettyPhoto[gallery8]" href="http://placehold.it/500x500" title=""><img src="images/resource/gallery-thumb2.jpg" alt="" /></a></li>
+                                            <li><p>The house of destiny church. Sample description of this picture</p></li>
                                         </ul>
                                     </div><!-- GALLERY ITEM -->
                                 </div>
@@ -582,19 +574,19 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="latest-tweets">
-                        <span><i class="fa fa-twitter"></i></span>
+                        <span><i class="fa fa-group"></i></span>
                         <div class="tweets-slides">
                             <div class="tweet">
-                                <p>Redownload an updates of this great #themeforest item 'Raddin - Elegant #Bootstrap #dark #Joomla #Templates' http://t.co/6NIBtFQ3yu</p>
-                                <span>( About 5 hours ago )</span>
+                                <p>The House of Destiny Church is an amazing place. The music is amazing and everyone is so kind and welcoming</p>
+                                <span>( Kimani Mbugua - Software Developer )</span>
                             </div>
                             <div class="tweet">
-                                <p>Redownload an updates of this great #themeforest item 'Raddin - Elegant #Bootstrap #dark #Joomla #Templates' http://t.co/6NIBtFQ3yu</p>
-                                <span>( About 5 hours ago )</span>
+                                <p>The House of Destiny Church is an amazing place. The music is amazing and everyone is so kind and welcoming</p>
+                                <span>( Kimani Mbugua - Software Developer )</span>
                             </div>
                             <div class="tweet">
-                                <p>Redownload an updates of this great #themeforest item 'Raddin - Elegant #Bootstrap #dark #Joomla #Templates' http://t.co/6NIBtFQ3yu</p>
-                                <span>( About 5 hours ago )</span>
+                                <p>The House of Destiny Church is an amazing place. The music is amazing and everyone is so kind and welcoming</p>
+                                <span>( Kimani Mbugua - Software Developer )</span>
                             </div>
                         </div>
                     </div>
