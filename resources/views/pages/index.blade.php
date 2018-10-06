@@ -439,11 +439,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="parallax-title">
-                        <h3 class="special-text">REQUEST <span>A PRAYER</span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero <br /> Nulla quis sem at nibh elementum imperdiet.</p>
+                        <h3 class="special-text">REACH <span>OUT</span></h3>
+                        <p>Don't suffer in silence <br /> The house of Destiny Church Team is here for you.</p>
                     </div>
                     <form class="prayer-request">
-                        <input type="text" placeholder="Are you hurting weed to talk">
+                        <input type="text" placeholder="Do you feel the urge to talk to someone?">
                         <input type="submit" value="Request Prayers" />
                     </form>
                 </div>
