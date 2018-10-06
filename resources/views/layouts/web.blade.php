@@ -221,7 +221,7 @@
         </footer><!-- FOOTER -->
         <div class="bottom-footer">
                 <div class="container">
-                        <p>©2018 <a href="#" title=""></a>The House of Destiny Church</a>All rights reserved. Powered by <a href="#" title="">Pypa</a></p>
+                        <p>©2018 <a href="#" title=""></a>The House of Destiny Church</a>All rights reserved. Powered by <a href="#" title="">Kim</a></p>
                     </div>
         </div><!-- BOTTOM FOOTER STRIP -->
         <div class="sidepanel">
