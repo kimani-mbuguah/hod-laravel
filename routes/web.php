@@ -17,6 +17,7 @@ Route::get('/gallery','PagesController@gallery');
 Route::get('/blog','PagesController@blog');
 Route::get('/sermons','PagesController@blog');
 Route::get('/word','PagesController@sermons');
+Route::get('/contact','PagesController@contact');
 Route::get('/addevent','PagesController@addevent');
 Route::post('/foo', function () {
     echo 1;

@@ -33,4 +33,8 @@ class PagesController extends Controller
     public function addevent(){
         return view('addEvent');
     }
+
+    public function contact(){
+        return view('pages.contact');
+    }
 }
