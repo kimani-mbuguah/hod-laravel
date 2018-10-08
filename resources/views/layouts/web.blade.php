@@ -80,7 +80,7 @@
 							<li><a href="/events" title="">Events</a></li>
 							<li><a href="/gallery" title="">Gallery</a></li>
 							<li><a href="/blog" title="">Blog</a></li>
-							<li><a href="/sermons" title="">Sermons</a></li>
+							<li><a href="/word" title="">Sermons</a></li>
 							<li><a href="/about" title="">About</a></li>
 							<li><a href="/contact" title="">Contact</a></li>
 							<li><a href="#" title="">Extra</a></li>
