@@ -16,211 +16,33 @@
                 <div class="row">
                     <div class="col-md-8 column">
                         <div class="remove-ext">
-                            <div class="blog-post">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="image">
-                                            <img src="images/resource/blog1.jpg" alt="" />
-                                            <a href="blog-single.html" title=""><i class="fa fa-link"></i></a>
+                            @if(count($posts) >0 )
+                            @foreach ($posts as $post)
+                                <div class="blog-post">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="image">
+                                                <img src="images/resource/blog1.jpg" alt="" />
+                                                <a href="blog-single.html" title=""><i class="fa fa-link"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="blog-detail">
+                                                <h3><a href="/posts/{{$post->id}}" title="{{$post->title}}">{{$post->title}}</a></h3>
+                                                <p>{!!$post->body!!}</p>
+                                                <span><i class="fa fa-calendar-o"></i> {{$post->created_at}}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-7">
-                                        <div class="blog-detail">
-                                            <h3><a href="blog-single.html" title="">Why Donate Us</a></h3>
-                                            <p>Aenen leo vene quam. Pellntes quie venenatis vestib citur onecs.Suspendisse velit ante, aliquet vel adipi cing auctor, tincidunt a diam. Lorem ipsum dolor sit .</p>
-                                            <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- BLOG POST -->
-                            <div class="blog-post">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="image">
-                                            <img src="images/resource/blog2.jpg" alt="" />
-                                            <a href="blog-single.html" title=""><i class="fa fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="blog-detail">
-                                            <h3><a href="blog-single.html" title="">Stop Waiting For Heaven</a></h3>
-                                            <p>Aenen leo vene quam. Pellntes quie venenatis vestib citur onecs.Suspendisse velit ante, aliquet vel adipi cing auctor, tincidunt a diam. Lorem ipsum dolor sit .</p>
-                                            <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- BLOG POST -->
-                            <div class="blog-post">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="image">
-                                            <img src="images/resource/blog3.jpg" alt="" />
-                                            <a href="blog-single.html" title=""><i class="fa fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="blog-detail">
-                                            <h3><a href="blog-single.html" title="">How To Get More From Your Group</a></h3>
-                                            <p>Aenen leo vene quam. Pellntes quie venenatis vestib citur onecs.Suspendisse velit ante, aliquet vel adipi cing auctor, tincidunt a diam. Lorem ipsum dolor sit .</p>
-                                            <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- BLOG POST -->
-                            <div class="blog-post">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="image">
-                                            <img src="images/resource/blog4.jpg" alt="" />
-                                            <a href="blog-single.html" title=""><i class="fa fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="blog-detail">
-                                            <h3><a href="blog-single.html" title="">Week 5: What Will Heaven Be Like?</a></h3>
-                                            <p>Aenen leo vene quam. Pellntes quie venenatis vestib citur onecs.Suspendisse velit ante, aliquet vel adipi cing auctor, tincidunt a diam. Lorem ipsum dolor sit .</p>
-                                            <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- BLOG POST -->
-                            <div class="blog-post">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="image">
-                                            <img src="images/resource/blog5.jpg" alt="" />
-                                            <a href="blog-single.html" title=""><i class="fa fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="blog-detail">
-                                            <h3><a href="blog-single.html" title="">How To Enjoy A Treasure That Lasts Forever</a></h3>
-                                            <p>Aenen leo vene quam. Pellntes quie venenatis vestib citur onecs.Suspendisse velit ante, aliquet vel adipi cing auctor, tincidunt a diam. Lorem ipsum dolor sit .</p>
-                                            <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- BLOG POST -->
-                            <div class="blog-post">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="image">
-                                            <img src="images/resource/blog1.jpg" alt="" />
-                                            <a href="blog-single.html" title=""><i class="fa fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="blog-detail">
-                                            <h3><a href="blog-single.html" title="">Why Donate Us</a></h3>
-                                            <p>Aenen leo vene quam. Pellntes quie venenatis vestib citur onecs.Suspendisse velit ante, aliquet vel adipi cing auctor, tincidunt a diam. Lorem ipsum dolor sit .</p>
-                                            <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- BLOG POST -->
-                            <div class="blog-post">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="image">
-                                            <img src="images/resource/blog2.jpg" alt="" />
-                                            <a href="blog-single.html" title=""><i class="fa fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="blog-detail">
-                                            <h3><a href="blog-single.html" title="">Stop Waiting For Heaven</a></h3>
-                                            <p>Aenen leo vene quam. Pellntes quie venenatis vestib citur onecs.Suspendisse velit ante, aliquet vel adipi cing auctor, tincidunt a diam. Lorem ipsum dolor sit .</p>
-                                            <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- BLOG POST -->
-                            <div class="blog-post">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="image">
-                                            <img src="images/resource/blog3.jpg" alt="" />
-                                            <a href="blog-single.html" title=""><i class="fa fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="blog-detail">
-                                            <h3><a href="blog-single.html" title="">How To Get More From Your Group</a></h3>
-                                            <p>Aenen leo vene quam. Pellntes quie venenatis vestib citur onecs.Suspendisse velit ante, aliquet vel adipi cing auctor, tincidunt a diam. Lorem ipsum dolor sit .</p>
-                                            <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- BLOG POST -->
-                            <div class="blog-post">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="image">
-                                            <img src="images/resource/blog4.jpg" alt="" />
-                                            <a href="blog-single.html" title=""><i class="fa fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="blog-detail">
-                                            <h3><a href="blog-single.html" title="">Week 5: What Will Heaven Be Like?</a></h3>
-                                            <p>Aenen leo vene quam. Pellntes quie venenatis vestib citur onecs.Suspendisse velit ante, aliquet vel adipi cing auctor, tincidunt a diam. Lorem ipsum dolor sit .</p>
-                                            <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- BLOG POST -->
-                            <div class="blog-post">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="image">
-                                            <img src="images/resource/blog5.jpg" alt="" />
-                                            <a href="blog-single.html" title=""><i class="fa fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="blog-detail">
-                                            <h3><a href="blog-single.html" title="">How To Enjoy A Treasure That Lasts Forever</a></h3>
-                                            <p>Aenen leo vene quam. Pellntes quie venenatis vestib citur onecs.Suspendisse velit ante, aliquet vel adipi cing auctor, tincidunt a diam. Lorem ipsum dolor sit .</p>
-                                            <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- BLOG POST -->
+                                </div><!-- BLOG POST -->
+                                @endforeach   
+                                    {{$posts->links()}} 
+                                @else
+                                    <h3>No posts available</h3>
+                                @endif
                         </div>
-                        <div class="theme-pagination">
-                            <ul class="pagination">
-                                <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                            </ul>
-                        </div><!-- PAGINATION -->
                     </div>
                     <aside class="col-md-4 sidebar column">
-                        <div class="widget">
-                            <div class="widget-title"><h4>OUR GALLERY</h4></div>
-                            <div class="gallery-widget lightbox">
-                                <div class="col-md-3"><a href="images/resource/flickr1.jpg"><img src="images/resource/flickr1.jpg" alt="" /></a></div>
-                                <div class="col-md-3"><a href="images/resource/flickr2.jpg"><img src="images/resource/flickr2.jpg" alt="" /></a></div>
-                                <div class="col-md-3"><a href="images/resource/flickr3.jpg"><img src="images/resource/flickr3.jpg" alt="" /></a></div>
-                                <div class="col-md-3"><a href="images/resource/flickr4.jpg"><img src="images/resource/flickr4.jpg" alt="" /></a></div>
-                                <div class="col-md-3"><a href="images/resource/flickr5.jpg"><img src="images/resource/flickr5.jpg" alt="" /></a></div>
-                                <div class="col-md-3"><a href="images/resource/flickr6.jpg"><img src="images/resource/flickr6.jpg" alt="" /></a></div>
-                                <div class="col-md-3"><a href="images/resource/flickr1.jpg"><img src="images/resource/flickr1.jpg" alt="" /></a></div>
-                                <div class="col-md-3"><a href="images/resource/flickr2.jpg"><img src="images/resource/flickr2.jpg" alt="" /></a></div>
-                            </div>
-                        </div><!-- GALLERY -->
-                        <div class="widget">
-                            <div class="widget-title"><h4>CATEGORIES</h4></div>
-                            <ul>
-                                <li><a href="blog.html" title=""><i class="fa fa-hand-o-right"></i>Events</a></li>
-                                <li><a href="blog.html" title=""><i class="fa fa-hand-o-right"></i>News</a></li>
-                                <li><a href="blog.html" title=""><i class="fa fa-hand-o-right"></i>Blog</a></li>
-                            </ul>
-                        </div><!-- CATEGORIES -->
                         <div class="widget">
                             <div class="widget-title"><h4>POPULAR POSTS</h4></div>
                             <div class="remove-ext">
@@ -241,21 +63,6 @@
                                 </div><!-- WIDGET BLOG -->
                             </div>						
                         </div><!-- POPULAR POSTS -->
-                        <div class="widget">
-                            <div class="widget-title"><h4>COMMENTS</h4></div>
-                            <div class="remove-ext">
-                                <div class="comment-widget">
-                                    <h5><a href="blog-single.html" title="">Design can feel like something you have always been waiting for without knowing.</a></h5>
-                                    <span><i class="fa fa-calendar-o"></i> NOVEMBER 01, 2013</span>
-                                    <span><i class="fa fa-user"></i> NORMAN RONOGH</span>
-                                </div>
-                                <div class="comment-widget">
-                                    <h5><a href="blog-single.html" title="">Design can feel like something you have always been waiting for without knowing.</a></h5>
-                                    <span><i class="fa fa-calendar-o"></i> NOVEMBER 01, 2013</span>
-                                    <span><i class="fa fa-user"></i> NORMAN RONOGH</span>
-                                </div>
-                            </div>
-                        </div><!-- COMMENTS -->
                         <div class="widget">
                             <div class="widget-title"><h4>UPCOMING EVENT</h4></div>					
                             <div class="event-count">

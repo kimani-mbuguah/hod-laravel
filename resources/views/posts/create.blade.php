@@ -53,7 +53,7 @@
                                 {{Form::label('post body', 'Post Body', ['class' => 'form-control-label'])}}
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="fa fa-book"></i></div>
-                                    {{Form::textarea('body', '', ['class' => 'form-control', 'placeholder'=>'Post Body','rows'=>'6'])}}
+                                    {{Form::textarea('body', '', ['id' => 'article-ckeditor','class' => 'form-control'])}}
                                 </div>
                                 <small class="form-text text-muted">ex. House of Destiny Church</small>
                             </div>
