@@ -23,7 +23,8 @@ Route::post('/foo', function () {
     echo 1;
     return;
 });
-
+//these are routes to blog/events etc
+Route::resource('posts','PostsController');
 Route::resource('events','EventsController');
 
 Auth::routes();
