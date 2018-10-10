@@ -59,14 +59,14 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Blog</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-puzzle-piece"></i><a href="/posts/create">Create Post</a></li>
-                            <li><i class="fa fa-id-badge"></i><a href="/">Edit Post</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="/posts/all">Edit Post</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Sermons</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="/">Upload Sermon</a></li>
-                            <li><i class="menu-icon ti-themify-logo"></i><a href="/">Edit Sermon</a></li>
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="/word/create">Upload Sermon</a></li>
+                            <li><i class="menu-icon ti-themify-logo"></i><a href="/word/all">Edit Sermon</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">

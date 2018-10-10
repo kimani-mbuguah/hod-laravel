@@ -19,13 +19,14 @@ Route::get('/sermons','PagesController@blog');
 Route::get('/word','PagesController@sermons');
 Route::get('/contact','PagesController@contact');
 Route::get('/addevent','PagesController@addevent');
-Route::post('/foo', function () {
-    echo 1;
-    return;
-});
+Route::get('/posts/all','PagesController@allPosts');
+Route::get('/word/all','PagesController@allSermons');
 //these are routes to blog/events etc
 Route::resource('posts','PostsController');
 Route::resource('events','EventsController');
+Route::resource('word','SermonsController');
+//comment on post routes
+Route::resource('comments','PostCommentsController');
 
 Auth::routes();
 

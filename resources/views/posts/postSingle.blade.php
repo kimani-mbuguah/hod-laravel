@@ -17,11 +17,11 @@
                 <div class="row">
                     <div class="col-md-8 column">
                         <div class="single-page">
-                            <img src="/images/resource/sermon-single.jpg" alt="" />
+                            <img src="/images/blog_images/{{$post->image}}" alt="{{$post->title}}" />
                             <h2>{{$post->title}}</h2>
                             <div class="meta">
                                 <ul>
-                                    <li><i class="fa fa-reply"></i> Posted In <a href="#" title="">Sermons</a></li>
+                                    <li><i class="fa fa-reply"></i> Posted In <a href="#" title="">Blog</a></li>
                                     <li><i class="fa fa-calendar-o"></i> {{$post->created_at}}</li>
                                     <li><i class="fa fa-user"></i> <a href="#" title="">{{$post->created_by}}</a></li>
                                 </ul>
@@ -30,7 +30,7 @@
                         </div><!-- SERMON SINGLE -->
                         <p>{!!$post->body!!} </p>
                         <div class="share-this">
-                            <h5><i class="fa fa-share"></i> SHARE THIS SERMON</h5>
+                            <h5><i class="fa fa-share"></i> SHARE THIS BLOG POST</h5>
                             <ul class="social-media">
                                 <li><a href="#" title=""><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="#" title=""><i class="fa fa-google-plus"></i></a></li>
@@ -72,12 +72,14 @@
                         <div class="leave-comment">
                             <h4><i class="fa fa-edit"></i> LEAVE A COMMENT</h4>
                             <p>Your email address will not be published.</p>
-                            <form>
-                                <input type="text" placeholder="Name" />
-                                <input type="email" placeholder="Email" />
-                                <textarea placeholder="Description"></textarea>
-                                <input type="submit" value="Comment" />
-                            </form>
+                            @include('inc.messages')
+                            {!! Form::open(['action' => 'PostCommentsController@store','method' => 'POST']) !!}
+                                {{Form::text('name', '', ['class' => 'form-control', 'placeholder'=>'Your Name'])}}
+                                {{Form::text('email', '', ['class' => 'form-control', 'placeholder'=>'Your Email'])}}
+                                {{Form::textarea('comment', '', ['class' => 'form-control', 'placeholder'=>'Comment','rows'=>'3'])}}
+                                {{Form::submit('Comment',['class'=>'btn btn-outline-primary btn-lg btn-block'])}}
+                                {{Form::hidden('post_comment', $post->id)}}
+                            {!! Form::close() !!}
                         </div><!-- COMMENT FORM -->	
                     </div>
                     <aside class="col-md-4 sidebar column">

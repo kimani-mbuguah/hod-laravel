@@ -29,15 +29,15 @@
             <div class="col-xs-12 col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <strong>Create a new blog post</strong>
+                        <strong>Edit post</strong>
                     </div>
                     <div class="card-body card-block">
-                        {!! Form::open(['action' => 'PostsController@store','files' => true,'method' => 'POST']) !!}
+                        {!! Form::open(['action' => ['PostsController@update',$post->id],'files' => true,'method' => 'POST']) !!}
                             <div class="form-group">
                                 {{Form::label('post title', 'Post Title', ['class' => 'form-control-label'])}}
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="fa fa-group"></i></div>
-                                    {{Form::text('title', '', ['class' => 'form-control', 'placeholder'=>'Post Title'])}}
+                                    {{Form::text('title', $post->title, ['class' => 'form-control', 'placeholder'=>'Post Title'])}}
                                 </div>
                                 <small class="form-text text-muted">ex. Youth Connect</small>
                             </div>
@@ -53,12 +53,13 @@
                                 {{Form::label('post body', 'Post Body', ['class' => 'form-control-label'])}}
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="fa fa-book"></i></div>
-                                    {{Form::textarea('body', '', ['id' => 'article-ckeditor','class' => 'form-control'])}}
+                                    {{Form::textarea('body', $post->body, ['id' => 'article-ckeditor','class' => 'form-control'])}}
                                 </div>
                                 <small class="form-text text-muted">ex. House of Destiny Church</small>
                             </div>
                             <div class="fom-group">
-                                {{Form::submit('Create Post',['class'=>'btn btn-outline-primary btn-lg btn-block'])}}
+                                {{Form::hidden('_method','PUT')}}
+                                {{Form::submit('Edit Post',['class'=>'btn btn-outline-primary btn-lg btn-block'])}}
                             </div>
                         {!! Form::close() !!}
                     </div>

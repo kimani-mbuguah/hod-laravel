@@ -41,10 +41,13 @@ class PostsController extends Controller
             'body' => 'required'
         ]);
         $post = new Post;
-        $post->image = $request->input('title');
         $post->title = $request->input('title');
         $post->body = $request->input('body');
-        $post->created_by = $request->input('title');
+        $post->created_by = auth()->user()->name;
+        $photoName = time().'.'.$request->post_image->getClientOriginalExtension();
+        $request->post_image->move(public_path('/images/blog_images'), $photoName);
+        $post->image = $photoName;
+
         $post->save();
         return redirect('/home')->with('success','Post Created Successfully');
     }
@@ -69,7 +72,8 @@ class PostsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Post::find($id);
+        return view('posts.edit')->with('post',$post);
     }
 
     /**
@@ -81,7 +85,19 @@ class PostsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request,[
+            'title' => 'required',
+            'body' => 'required'
+        ]);
+        $post = Post::find($id);
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+        $post->created_by = auth()->user()->name;
+        $photoName = time().'.'.$request->post_image->getClientOriginalExtension();
+        $request->post_image->move(public_path('/images/blog_images'), $photoName);
+        $post->image = $photoName;
+        $post->save();
+        return redirect('/home')->with('success','Post Updated Successfully');
     }
 
     /**
@@ -92,6 +108,8 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Post::find($id);
+        $post->delete();
+        return redirect('/home')->with('success','Post Deleted Successfully');
     }
 }
