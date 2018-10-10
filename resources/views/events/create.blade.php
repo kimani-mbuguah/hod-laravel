@@ -32,7 +32,7 @@
                         <strong>Create a new event</strong>
                     </div>
                     <div class="card-body card-block">
-                        {!! Form::open(['action' => 'EventsController@store','method' => 'POST']) !!}
+                        {!! Form::open(['action' => 'EventsController@store','files' => true,'method' => 'POST']) !!}
                             <div class="form-group">
                                 {{Form::label('event name', 'Event Name', ['class' => 'form-control-label'])}}
                                 <div class="input-group">
@@ -61,7 +61,7 @@
                                 {{Form::label('event starting time', 'Event Starting Time', ['class' => 'form-control-label'])}}
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
-                                    {{Form::text('starting_time', '', ['class' => 'form-control', 'placeholder'=>'Event Starting Time'])}}
+                                    {{Form::text('start_time', '', ['class' => 'form-control', 'placeholder'=>'Event Starting Time'])}}
                                 </div>
                                 <small class="form-text text-muted">ex. 8:00 A.M</small>
                             </div>

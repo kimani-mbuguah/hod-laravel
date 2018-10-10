@@ -20,6 +20,7 @@ class CreateEventsTable extends Migration
             $table->mediumText('description');
             $table->string('start_time');
             $table->string('end_time');
+            $table->string('date');
             $table->string('location');
             $table->string('posted_by');
             $table->timestamps();

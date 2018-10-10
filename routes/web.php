@@ -12,19 +12,14 @@
 */
 Route::get('/','PagesController@index');
 Route::get('/about','PagesController@about');
-//Route::get('/events','PagesController@events');
-Route::get('/gallery','PagesController@gallery');
-Route::get('/blog','PagesController@blog');
-Route::get('/sermons','PagesController@blog');
-Route::get('/word','PagesController@sermons');
 Route::get('/contact','PagesController@contact');
-Route::get('/addevent','PagesController@addevent');
 Route::get('/posts/all','PagesController@allPosts');
 Route::get('/word/all','PagesController@allSermons');
 //these are routes to blog/events etc
 Route::resource('posts','PostsController');
 Route::resource('events','EventsController');
 Route::resource('word','SermonsController');
+Route::resource('gallery','GalleryController');
 //comment on post routes
 Route::resource('comments','PostCommentsController');
 

@@ -20,18 +20,6 @@ class PagesController extends Controller
         return view('pages.events');
     }
 
-    public function gallery(){
-        return view('pages.gallery');
-    }
-
-    public function blog(){
-        return view('pages.blog');
-    }
-
-    public function sermons(){
-        return view('pages.sermons');
-    }
-
     public function addevent(){
         return view('addEvent');
     }

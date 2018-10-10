@@ -168,7 +168,7 @@
                                     <p>STEP BY STEP TOWARDS OUR DESTINY IN CHRIST
                                     <div class="contact">
                                         <ul>
-                                            <li><span><i class="fa fa-phone"></i>Phone :</span> ( 254-705-000-050 ) ( +185 557 89 89 )</li>
+                                            <li><span><i class="fa fa-phone"></i>Phone :</span> ( +254 705 000 050 )</li>
                                             <li><span><i class="fa fa-envelope"></i>Email:</span> hello@houseofdestinykerugoya.org</li>
                                             <li><span><i class="fa fa-home"></i>Address:</span>Kutus-Kerugoya Road, Kerugoya Kenya</li>
                                         </ul>

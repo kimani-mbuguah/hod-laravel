@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Event;
+use App\Gallery;
 
-class EventsController extends Controller
+class GalleryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class EventsController extends Controller
      */
     public function index()
     {
-        $events = Event::orderBy('created_at','desc')->paginate(6);
-        return view('events.index')->with('events',$events);
+        $galleries = Gallery::orderBy('created_at','desc')->paginate(2);
+        return view('gallery.index')->with('galleries',$galleries);
     }
 
     /**
@@ -25,7 +25,7 @@ class EventsController extends Controller
      */
     public function create()
     {
-        return view('events.create');
+        return view('gallery.create');
     }
 
     /**
@@ -37,28 +37,17 @@ class EventsController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'title' => 'required',
-            'description' => 'required',
             'image' => 'required',
-            'start_time' => 'required',
-            'end_time' => 'required',
-            'location' => 'required',
-            'date' => 'required',
+            'description' => 'required'
         ]);
-        $event = new Event;
-        $event->title = $request->input('title');
-        $event->date = $request->input('date');
-        $event->start_time = $request->input('start_time');//this is a bug
-        $event->end_time = $request->input('end_time');
-        $event->location = $request->input('location');
-        $event->posted_by = auth()->user()->name;
-        $event->description = $request->input('description');
-
+        $gallery = new Gallery;
+        $gallery->description = $request->input('description');
         $photoName = time().'.'.$request->image->getClientOriginalExtension();
-        $request->image->move(public_path('/images/event_images'), $photoName);
-        $event->image = $photoName;
-        $event->save();
-        return redirect('/home')->with('success','Event Created Successfully');  
+        $request->image->move(public_path('/images/gallery'), $photoName);
+        $gallery->image = $photoName;
+
+        $gallery->save();
+        return redirect('/home')->with('success','Image Uploaded Successfully');
     }
 
     /**
@@ -69,8 +58,7 @@ class EventsController extends Controller
      */
     public function show($id)
     {
-        $event = Event::find($id);
-        return view('events.eventSingle')->with('event',$event);
+        //
     }
 
     /**

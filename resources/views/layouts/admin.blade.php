@@ -72,8 +72,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Gallery</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="/">Upload New Photos</a></li>
-                            <li><i class="menu-icon ti-themify-logo"></i><a href="/">Edit Gallery</a></li>
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="/gallery/create">Upload New Photos</a></li>
                         </ul>
                     </li>
                     <h3 class="menu-title">HoD System</h3><!-- /.menu-title -->
