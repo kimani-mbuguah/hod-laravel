@@ -5,8 +5,8 @@
         <div class="container"> 
             <h1>BLOG <span>PAGE</span></h1>
             <ul>
-                <li><a href="index-2.html" title="">Home</a></li>
-                <li><a href="blog.html" title="">Blog List</a></li>
+                <li><a href="/" title="">Home</a></li>
+                <li><a href="#" title="">Blog List</a></li>
             </ul>
         </div>
     </div>
@@ -23,13 +23,13 @@
                                         <div class="col-md-5">
                                             <div class="image">
                                                 <img src="images/resource/blog1.jpg" alt="" />
-                                                <a href="blog-single.html" title=""><i class="fa fa-link"></i></a>
+                                                <a href="/posts/{{$post->id}}" title=""><i class="fa fa-link"></i></a>
                                             </div>
                                         </div>
                                         <div class="col-md-7">
                                             <div class="blog-detail">
                                                 <h3><a href="/posts/{{$post->id}}" title="{{$post->title}}">{{$post->title}}</a></h3>
-                                                <p>{!!$post->body!!}</p>
+                                                <p> {!! str_limit($post->body, $limit = 150, $end = '...') !!}</p>
                                                 <span><i class="fa fa-calendar-o"></i> {{$post->created_at}}</span>
                                             </div>
                                         </div>
