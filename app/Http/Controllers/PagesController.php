@@ -5,23 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Sermon;
+use App\SliderOne;
 
 class PagesController extends Controller
 {
     public function index(){
-        return view('pages.index');
+        $sliderones = SliderOne::all();
+        return view('pages.index')->with('sliderones',$sliderones);
     }
 
     public function about(){
         return view('pages.about');
-    }
-
-    public function events(){
-        return view('pages.events');
-    }
-
-    public function addevent(){
-        return view('addEvent');
     }
 
     public function contact(){

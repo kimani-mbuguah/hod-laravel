@@ -20,6 +20,7 @@ Route::resource('posts','PostsController');
 Route::resource('events','EventsController');
 Route::resource('word','SermonsController');
 Route::resource('gallery','GalleryController');
+Route::resource('sliderone','SliderOneController');
 //comment on post routes
 Route::resource('comments','PostCommentsController');
 
