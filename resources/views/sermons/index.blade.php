@@ -36,7 +36,7 @@
                                             <li><a title=""><i class="audio-btn fa fa-headphones"></i>
                                                 <div class="audioplayer"><audio  src="/sermons/{{$sermon->audio}}"></audio><span class="cross">X</span></div>
                                             </a></li>
-                                            <li><a target="_blank" href="#" title=""><i class="fa fa-download"></i></a></li>
+                                            <li><a target="_blank" href="sermons/{{$sermon->audio}}" title=""><i class="fa fa-download"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -52,49 +52,32 @@
                         <div class="widget">
                             <div class="widget-title"><h4>POPULAR POSTS</h4></div>
                             <div class="remove-ext">
-                                <div class="widget-blog">
-                                    <div class="widget-blog-img"><img src="images/resource/widget-blog.jpg" alt="" /></div>
-                                    <p><a href="blog-single.html" title="">Suspendisse velit anteg, aliquet vel adiping.</a></p>
-                                    <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
-                                </div><!-- WIDGET BLOG -->
-                                <div class="widget-blog">
-                                    <div class="widget-blog-img"><img src="images/resource/widget-blog2.jpg" alt="" /></div>
-                                    <p><a href="blog-single.html" title="">Suspendisse velit anteg, aliquet vel adiping.</a></p>
-                                    <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
-                                </div><!-- WIDGET BLOG -->
-                                <div class="widget-blog">
-                                    <div class="widget-blog-img"><img src="images/resource/widget-blog3.jpg" alt="" /></div>
-                                    <p><a href="blog-single.html" title="">Suspendisse velit anteg, aliquet vel adiping.</a></p>
-                                    <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
-                                </div><!-- WIDGET BLOG -->
+                                @if(count($footerPosts) >0 )
+                                    @foreach ($footerPosts as $footerPost)
+                                        <div class="widget-blog">
+                                            <div class="widget-blog-img"><img src="/images/blog_images/{{$footerPost->image}}" alt="" /></div>
+                                            <h6><a href="/posts" title=""> {{$footerPost->title}}</a></h6>
+                                            <p>{!! str_limit($footerPost->body, $limit = 200, $end = '...') !!}</p>
+                                            <span><i class="fa fa-calendar-o"></i> {{$footerPost->created_at}}</span>
+                                        </div><!-- WIDGET BLOG -->
+                                    @endforeach   
+                                @endif
                             </div>						
                         </div><!-- POPULAR POSTS -->
                         <div class="widget">
-                            <div class="widget-title"><h4>UPCOMING EVENT</h4></div>					
-                            <div class="event-count">
-                                <div class="event-img">
-                                    <img src="images/resource/event1.jpg" alt="" />
-                                    <div class="downcount">
-                                        <i class="fa fa-clock-o"></i>
-                                        <ul class="countdown">
-                                            <li> <span class="days">00</span>
-                                            <p class="days_ref">DAYS</p>
-                                            </li>
-                                            <li> <span class="hours">00</span>
-                                            <p class="hours_ref">HOURS</p>
-                                            </li>
-                                            <li> <span class="minutes">00</span>
-                                            <p class="minutes_ref">MINTS</p>
-                                            </li>
-                                            <li> <span class="seconds">00</span>
-                                            <p class="seconds_ref">SECS</p>
-                                            </li>
+                                <div class="widget-title"><h4>LATEST EVENT</h4></div>
+                                <div class="animal-event simple">
+                                    <div class="animal-detail">
+                                        <h4><a href="#" title="">{{$showEvent['title']}}</a></h4>
+                                        <div class="animal-img"><img src="/images/event_images/{{$showEvent['image']}}" alt="" /><span><strong><i class="fa fa-calendar"></i></strong>{{$showEvent['date']}}</span></div>
+                                        <ul>
+                                            <li><a href="#" title=""><i class="fa fa-map-marker"></i></a> <span>{{$showEvent['location']}}</span></li>
+                                            <li><a href="#" title=""><i class="fa fa-comments"></i></a><span>32 Comments</span></li>
+                                            <li><a href="#" title=""><i class="fa fa-clock-o"></i></a><span>{{$showEvent['start_time']}}</span></li>
                                         </ul>
                                     </div>
                                 </div>
-                                <h4><a href="event-single.html" title="">Offer and General Visuals</a></h4>
-                            </div>
-                        </div><!-- UPCOMING EVENT -->								
+                            </div><!-- LATEST EVENT -->						
                     </aside><!-- SIDEBAR -->
                 </div>
             </div>

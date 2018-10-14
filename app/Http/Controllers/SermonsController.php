@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Sermon;
 use App\Post;
+use App\Event;
 
 class SermonsController extends Controller
 {
@@ -17,8 +18,10 @@ class SermonsController extends Controller
     {
         $sermons = Sermon::orderBy('created_at','desc')->paginate(6);
         $footerPosts = Post::orderBy('created_at','desc')->take(2)->get();
+        $showEvent = Event::orderBy('created_at','desc')->first();
         return view('sermons.index')
         ->with('sermons',$sermons)
+        ->with('showEvent',$showEvent)
         ->with('footerPosts',$footerPosts);
     }
 
