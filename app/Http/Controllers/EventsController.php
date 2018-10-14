@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Event;
+use App\Post;
 
 class EventsController extends Controller
 {
@@ -15,7 +16,12 @@ class EventsController extends Controller
     public function index()
     {
         $events = Event::orderBy('created_at','desc')->paginate(6);
-        return view('events.index')->with('events',$events);
+        $footerPosts = Post::orderBy('created_at','desc')->take(2)->get();
+        $showEvent = Event::orderBy('created_at','desc')->first();
+        return view('events.index')
+        ->with('footerPosts',$footerPosts)
+        ->with('events',$events)
+        ->with('showEvent',$showEvent);
     }
 
     /**

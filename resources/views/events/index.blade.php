@@ -52,28 +52,28 @@
                         <div class="widget">
                             <div class="widget-title"><h4>RECENT BLOG</h4></div>
                             <div class="remove-ext">
-                                <div class="widget-blog">
-                                    <div class="widget-blog-img"><img src="images/resource/widget-blog.jpg" alt="" /></div>
-                                    <p><a href="blog-single.html" title="">House of Destiny</a></p>
-                                    <span><i class="fa fa-calendar-o"></i> November 01, 2018</span>
-                                </div><!-- WIDGET BLOG -->
-                                <div class="widget-blog">
-                                    <div class="widget-blog-img"><img src="images/resource/widget-blog2.jpg" alt="" /></div>
-                                    <p><a href="blog-single.html" title="">House of Destiny</a></p>
-                                    <span><i class="fa fa-calendar-o"></i> November 01, 2018</span>
-                                </div><!-- WIDGET BLOG -->
+                                @if(count($footerPosts) >0 )
+                                    @foreach ($footerPosts as $footerPost)
+                                        <div class="widget-blog">
+                                            <div class="widget-blog-img"><img src="/images/blog_images/{{$footerPost->image}}" alt="" /></div>
+                                            <h6><a href="/posts" title=""> {{$footerPost->title}}</a></h6>
+                                            <p>{!! str_limit($footerPost->body, $limit = 200, $end = '...') !!}</p>
+                                            <span><i class="fa fa-calendar-o"></i> {{$footerPost->created_at}}</span>
+                                        </div><!-- WIDGET BLOG -->
+                                    @endforeach   
+                                @endif
                             </div>						
                         </div><!-- RECENT BLOG -->
                         <div class="widget">
                             <div class="widget-title"><h4>LATEST EVENT</h4></div>
                             <div class="animal-event simple">
                                 <div class="animal-detail">
-                                    <h4><a href="#" title="">Youth Connect</a></h4>
-                                    <div class="animal-img"><img src="images/resource/animal-event1.jpg" alt="" /><span><strong>12</strong>Dec 2018</span></div>
+                                    <h4><a href="#" title="">{{$showEvent['title']}}</a></h4>
+                                    <div class="animal-img"><img src="/images/event_images/{{$showEvent['image']}}" alt="" /><span><strong><i class="fa fa-calendar"></i></strong>{{$showEvent['date']}}</span></div>
                                     <ul>
-                                        <li><a href="#" title=""><i class="fa fa-map-marker"></i></a> <span>The House of Destiny Kerugoya</span></li>
+                                        <li><a href="#" title=""><i class="fa fa-map-marker"></i></a> <span>{{$showEvent['location']}}</span></li>
                                         <li><a href="#" title=""><i class="fa fa-comments"></i></a><span>32 Comments</span></li>
-                                        <li><a href="#" title=""><i class="fa fa-clock-o"></i></a><span>30-08-2018 10:48 am</span></li>
+                                        <li><a href="#" title=""><i class="fa fa-clock-o"></i></a><span>{{$showEvent['start_time']}}</span></li>
                                     </ul>
                                 </div>
                             </div>
