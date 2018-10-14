@@ -67,26 +67,17 @@
                             <div class="widget-title"><h4>UPCOMING EVENT</h4></div>					
                             <div class="event-count">
                                 <div class="event-img">
-                                    <img src="images/resource/event1.jpg" alt="" />
+                                    <img src="/images/event_images/{{$event['image']}}" alt="" />
                                     <div class="downcount">
                                         <i class="fa fa-clock-o"></i>
                                         <ul class="countdown">
-                                            <li> <span class="days">00</span>
-                                            <p class="days_ref">DAYS</p>
-                                            </li>
-                                            <li> <span class="hours">00</span>
-                                            <p class="hours_ref">HOURS</p>
-                                            </li>
-                                            <li> <span class="minutes">00</span>
-                                            <p class="minutes_ref">MINTS</p>
-                                            </li>
-                                            <li> <span class="seconds">00</span>
-                                            <p class="seconds_ref">SECS</p>
+                                            <li> <span class="days">Date</span>
+                                            <p class="days_ref">{{$event['date']}}</p>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <h4><a href="event-single.html" title="">Offer and General Visuals</a></h4>
+                                <h4><a href="event-single.html" title="">{{$event['title']}}</a></h4>
                             </div>
                         </div><!-- UPCOMING EVENT -->					
                         <div class="widget">
