@@ -412,102 +412,25 @@
                     <div class="remove-ext">
                         <div class="row">
                             <div class="mas-gallery">
-                                <div class="col-md-3">
-                                    <div class="gallery">
-                                        <img src="images/resource/gallery-large-1.jpg" alt="" />
-                                        <div class="gallery-title">
-                                            <i class="fa fa-picture-o"></i>
-                                            <h3>House of Destiny</h3>
+                                @if(count($galleries) >0 )
+                                    @foreach ($galleries as $gallery)
+                                        <div class="col-md-3">
+                                            <div class="gallery lightbox">
+                                                <img src="/images/gallery/{{$gallery->image}}" alt="{{$gallery->description}}" /> 
+                                                <div class="gallery-title">
+                                                    <i class="fa fa-picture-o"></i>
+                                                    <h3>{!!$gallery->description!!}</h3>
+                                                </div>
+                                                <ul>
+                                                    <li><a  href="/images/gallery/{{$gallery->image}}" title="{{$gallery->desctiption}}"><img src="images/resource/gallery-thumb1.jpg" alt="{{$gallery->description}}" /></a></li>
+                                                </ul>
+                                            </div><!-- GALLERY ITEM -->
                                         </div>
-                                        <ul>
-                                            <li><p>The house of destiny church. Sample description of this picture</p></li>
-                                        </ul>
-                                    </div><!-- GALLERY ITEM -->
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="gallery">
-                                        <img src="images/resource/gallery-large-2.jpg" alt="" />
-                                        <div class="gallery-title">
-                                            <i class="fa fa-picture-o"></i>
-                                            <h3>House of Destiny</h3>
-                                        </div>
-                                        <ul>
-                                            <li><p>The house of destiny church. Sample description of this picture</p></li>
-                                        </ul>
-                                    </div><!-- GALLERY ITEM -->
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="gallery">
-                                        <img src="images/resource/gallery-large-3.jpg" alt="" />
-                                        <div class="gallery-title">
-                                            <i class="fa fa-picture-o"></i>
-                                            <h3>House of Destiny</h3>
-                                        </div>
-                                        <ul>
-                                            <li><p>The house of destiny church. Sample description of this picture</p></li>
-                                        </ul>
-                                    </div><!-- GALLERY ITEM -->
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="gallery">
-                                        <img src="images/resource/gallery-large-4.jpg" alt="" />
-                                        <div class="gallery-title">
-                                            <i class="fa fa-picture-o"></i>
-                                            <h3>House of Destiny </h3>
-                                        </div>
-                                        <ul>
-                                            <li><p>The house of destiny church. Sample description of this picture</p></li>
-                                        </ul>
-                                    </div><!-- GALLERY ITEM -->
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="gallery">
-                                        <img src="images/resource/gallery-large-5.jpg" alt="" />
-                                        <div class="gallery-title">
-                                            <i class="fa fa-picture-o"></i>
-                                            <h3>House of Destiny</h3>
-                                        </div>
-                                        <ul>
-                                            <li><p>The house of destiny church. Sample description of this picture</p></li>
-                                        </ul>
-                                    </div><!-- GALLERY ITEM -->
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="gallery">
-                                        <img src="images/resource/gallery-large-6.jpg" alt="" />
-                                        <div class="gallery-title">
-                                            <i class="fa fa-picture-o"></i>
-                                            <h3>House of Destiny</h3>
-                                        </div>
-                                        <ul>
-                                            <li><p>The house of destiny church. Sample description of this picture</p></li>
-                                        </ul>
-                                    </div><!-- GALLERY ITEM -->
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="gallery">
-                                        <img src="images/resource/gallery-large-7.jpg" alt="" />
-                                        <div class="gallery-title">
-                                            <i class="fa fa-picture-o"></i>
-                                            <h3>House of Destiny</h3>
-                                        </div>
-                                        <ul>
-                                            <li><p>The house of destiny church. Sample description of this picture</p></li>
-                                        </ul>
-                                    </div><!-- GALLERY ITEM -->
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="gallery">
-                                        <img src="images/resource/gallery-large-8.jpg" alt="" />
-                                        <div class="gallery-title">
-                                            <i class="fa fa-picture-o"></i>
-                                            <h3>House of Destiny</h3>
-                                        </div>
-                                        <ul>
-                                            <li><p>The house of destiny church. Sample description of this picture</p></li>
-                                        </ul>
-                                    </div><!-- GALLERY ITEM -->
-                                </div>
+                                    @endforeach   
+                                    {{$galleries->links()}} 
+                                    @else
+                                        <h3>No photos available</h3>
+                                @endif
                             </div>
                         </div>
                     </div>

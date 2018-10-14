@@ -10,6 +10,7 @@ use App\SliderTwo;
 use App\SliderThree;
 use App\Event;
 use App\Devotions;
+use App\Gallery;
 
 class PagesController extends Controller
 {
@@ -19,12 +20,14 @@ class PagesController extends Controller
         $sliderthrees = SliderThree::all();
         $devotions = Devotions::all();
         $event = Event::orderBy('created_at','desc')->first();
+        $galleries = Gallery::orderBy('created_at','desc')->paginate(8);
         return view('pages.index')
         ->with('sliderones',$sliderones)
         ->with('slidertwos',$slidertwos)
         ->with('sliderthrees',$sliderthrees)
         ->with('event',$event)
-        ->with('devotions',$devotions);
+        ->with('devotions',$devotions)
+        ->with('galleries',$galleries);
     }
 
     public function about(){
