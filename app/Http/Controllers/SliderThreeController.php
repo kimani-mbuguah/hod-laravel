@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\SliderOne;
+use App\SliderThree;
 
-class SliderOneController extends Controller
+class SliderThreeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class SliderOneController extends Controller
      */
     public function index()
     {
-        return view('carousel.sliderone');
+        return view('carousel.sliderthree');
     }
 
     /**
@@ -41,14 +41,14 @@ class SliderOneController extends Controller
             'text_three' => 'required',
             'bg_image' => 'required'
         ]);
-        $sliderOne = new SliderOne;
-        $sliderOne->text_one = $request->input('text_one');
-        $sliderOne->text_two = $request->input('text_two');
-        $sliderOne->text_three = $request->input('text_three');
+        $sliderThree = new SliderThree;
+        $sliderThree->text_one = $request->input('text_one');
+        $sliderThree->text_two = $request->input('text_two');
+        $sliderThree->text_three = $request->input('text_three');
         $imageName = time().'.'.$request->bg_image->getClientOriginalExtension();
         $request->bg_image->move(public_path('/images/slider'), $imageName);
-        $sliderOne->bg_image = $imageName;
-        $sliderOne->save();
+        $sliderThree->bg_image = $imageName;
+        $sliderThree->save();
         return redirect('/home')->with('success','Changes Saved');
     }
 
@@ -83,21 +83,7 @@ class SliderOneController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request,[
-            'text_one' => 'required',
-            'text_two' => 'required',
-            'text_three' => 'required',
-            'bg_image' => 'required'
-        ]);
-        $sliderOne = SliderOne::find($id);
-        $sliderOne->text_one = $request->input('text_one');
-        $sliderOne->text_two = $request->input('text_two');
-        $sliderOne->text_three = $request->input('text_three');
-        $imageName = time().'.'.$request->bg_image->getClientOriginalExtension();
-        $request->bg_image->move(public_path('/images/blog_images'), $imageName);
-        $sliderOne->bg_image = $imageName;
-        $sliderOne->save();
-        return redirect('/home')->with('success','Changes Saved');
+        //
     }
 
     /**

@@ -6,12 +6,19 @@ use Illuminate\Http\Request;
 use App\Post;
 use App\Sermon;
 use App\SliderOne;
+use App\SliderTwo;
+use App\SliderThree;
 
 class PagesController extends Controller
 {
     public function index(){
         $sliderones = SliderOne::all();
-        return view('pages.index')->with('sliderones',$sliderones);
+        $slidertwos = SliderTwo::all();
+        $sliderthrees = SliderThree::all();
+        return view('pages.index')
+        ->with('sliderones',$sliderones)
+        ->with('slidertwos',$slidertwos)
+        ->with('sliderthrees',$sliderthrees);
     }
 
     public function about(){

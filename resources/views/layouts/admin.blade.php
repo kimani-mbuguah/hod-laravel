@@ -49,6 +49,14 @@
                     </li>
                     <h3 class="menu-title">Website Management</h3><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Slider</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="dashboard/slider/sliderone">Slider One</a></li>
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="dashboard/slider/slidertwo">Slider Two</a></li>
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="dashboard/slider/sliderthree">Slider Three</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Events</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-puzzle-piece"></i><a href="/events/create">Create Event</a></li>
