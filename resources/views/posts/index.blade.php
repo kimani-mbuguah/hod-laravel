@@ -93,19 +93,17 @@
                             <div class="widget-title"><h4>RECENT SERMON</h4></div>
                             <div class="sermon-widget">
                                 <div class="sermon-img">
-                                    <img src="images/resource/recent-sermon-widget.jpg" alt="" />
-                                    <span><i class="fa fa-calendar-o"></i> November 01, 2014</span>
-                                    <h3><a href="#" title="">Cras Imperdiet Viverra Magna</a></h3>
+                                    <img src="/images/sermons_images/{{$latestSermon['image']}}" alt="" />
+                                <span><i class="fa fa-calendar-o"></i> {{$latestSermon['created_at']}}</span>
+                                    <h3><a href="#" title="">{{$latestSermon['title']}}</a></h3>
                                 </div>
                                 <div class="sermon-detail">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Sed laoreet massa at dui aliquet...</p>
+                                <p>{!! str_limit($latestSermon['description'], $limit = 300, $end = '...') !!}</p>
                                     <ul class="sermon-media">
-                                        <li><a href="http://vimeo.com/44867610" data-rel="prettyPhoto" title=""><i class="fa fa-film"></i></a></li>
                                         <li><a title=""><i class="audio-btn fa fa-headphones"></i>
-                                            <div class="audioplayer"><audio  src="sermon.mp3"></audio><span class="cross">X</span></div>
+                                            <div class="audioplayer"><audio  src="/sermons/{{$latestSermon['audio']}}"></audio><span class="cross">X</span></div>
                                         </a></li>
-                                        <li><a target="_blank" href="../../themes.webinane.com/deeds/test.html" title=""><i class="fa fa-download"></i></a></li>
-                                        <li><a target="_blank" href="../../themes.webinane.com/deeds/test.pdf" title=""><i class="fa fa-book"></i></a></li>
+                                        <li><a target="_blank" href="/sermons/{{$latestSermon['audio']}}" title=""><i class="fa fa-download"></i></a></li>
                                     </ul>									
                                 </div>
                             </div>
