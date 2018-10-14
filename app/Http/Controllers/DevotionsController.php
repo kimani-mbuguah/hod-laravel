@@ -39,26 +39,26 @@ class DevotionsController extends Controller
             'title' => 'required',
             'description' => 'required'
         ]);
-        $sermon = new Sermon;
-        $sermon->title = $request->input('title');
-        $sermon->description = $request->input('description');
-        if ($request->hasFile('sermon_image')) {
-            $photoName = time().'.'.$request->sermon_image->getClientOriginalExtension();
-            $request->sermon_image->move(public_path('/images/sermons_images'), $photoName);
-            $sermon->image = $photoName;
+        $devotion = new Devotions;
+        $devotion->title = $request->input('title');
+        $devotion->description = $request->input('description');
+        if ($request->hasFile('devotion_image')) {
+            $photoName = time().'.'.$request->devotion_image->getClientOriginalExtension();
+            $request->devotion_image->move(public_path('/images/sermons_images'), $photoName);
+            $devotion->image = $photoName;
         }else{
-            $sermon->image = "default.jpg";
+            $devotion->image = "default.jpg";
         }
 
         if ($request->hasFile('audio')) {
             $audioName = time().'.'.$request->audio->getClientOriginalExtension();
             $request->audio->move(public_path('/sermons'), $audioName);
-            $sermon->audio = $audioName;
+            $devotion->audio = $audioName;
         }else{
-            $sermon->image = "default.mp3";
+            $devotion->image = "default.mp3";
         }
 
-        $sermon->save();
+        $devotion->save();
         return redirect('/home')->with('success','Devotion Created Successfully');
     }
 

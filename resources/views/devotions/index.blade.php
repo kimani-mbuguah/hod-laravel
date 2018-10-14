@@ -34,23 +34,23 @@
                     <div class="card-body card-block">
                         {!! Form::open(['action' => 'DevotionsController@store','files' => true,'method' => 'POST']) !!}
                             <div class="form-group">
-                                {{Form::label('sermon title', 'Sermon Title', ['class' => 'form-control-label'])}}
+                                {{Form::label('devotion title', 'Devotion Title', ['class' => 'form-control-label'])}}
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="fa fa-group"></i></div>
-                                    {{Form::text('title', '', ['class' => 'form-control', 'placeholder'=>'Sermon Title'])}}
+                                    {{Form::text('title', '', ['class' => 'form-control', 'placeholder'=>'Devotion Title'])}}
                                 </div>
                                 <small class="form-text text-muted">ex. Youth Connect</small>
                             </div>
                             <div class="form-group">
-                                {{Form::label('sermon image', 'Sermon Image', ['class' => 'form-control-label'])}}
+                                {{Form::label('devotion image', 'Devotion Image', ['class' => 'form-control-label'])}}
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                                    {{Form::file('sermon_image')}}
+                                    {{Form::file('devotion_image')}}
                                 </div>
                                 <small class="form-text text-muted">ex. hod.jpg</small>
                             </div>
                             <div class="form-group">
-                                {{Form::label('sermon description', 'Sermon Description', ['class' => 'form-control-label'])}}
+                                {{Form::label('devituib body', 'Devotion Body', ['class' => 'form-control-label'])}}
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="fa fa-book"></i></div>
                                     {{Form::textarea('description', '', ['id' => 'article-ckeditor','class' => 'form-control', 'maxlength' => 50])}}
@@ -58,7 +58,7 @@
                                 <small class="form-text text-muted">ex. House of Destiny Church</small>
                             </div>
                             <div class="form-group">
-                                    {{Form::label('sermon audio file', 'Sermon Audio File', ['class' => 'form-control-label'])}}
+                                    {{Form::label('devotion audio file', 'Devotion Audio File', ['class' => 'form-control-label'])}}
                                     <div class="input-group">
                                         <div class="input-group-addon"><i class="fa fa-user"></i></div>
                                         {{Form::file('audio')}}
@@ -66,7 +66,7 @@
                                     <small class="form-text text-muted">ex. hod.mp3</small>
                                 </div>
                             <div class="fom-group">
-                                {{Form::submit('Create Sermon',['class'=>'btn btn-outline-primary btn-lg btn-block'])}}
+                                {{Form::submit('Create Devotion',['class'=>'btn btn-outline-primary btn-lg btn-block'])}}
                             </div>
                         {!! Form::close() !!}
                     </div>
