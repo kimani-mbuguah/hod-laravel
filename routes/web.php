@@ -23,6 +23,7 @@ Route::resource('gallery','GalleryController');
 Route::resource('/dashboard/slider/sliderone','SliderOneController');
 Route::resource('/dashboard/slider/slidertwo','SliderTwoController');
 Route::resource('/dashboard/slider/sliderthree','SliderThreeController');
+Route::resource('/dashboard/devotions','DevotionsController');
 //comment on post routes
 Route::resource('comments','PostCommentsController');
 

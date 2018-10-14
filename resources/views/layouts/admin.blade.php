@@ -83,22 +83,13 @@
                             <li><i class="menu-icon fa fa-fort-awesome"></i><a href="/gallery/create">Upload New Photos</a></li>
                         </ul>
                     </li>
-                    <h3 class="menu-title">HoD System</h3><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Member Management</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="/">Register Member</a></li>
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="/">View Members</a></li>
-                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="/">Edit Memeber Profile</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-area-chart"></i>Extra</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-map-o"></i><a href="/">HOD</a></li>
-                        </ul>
-                    </li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Daily Devotions</a>
+                            <ul class="sub-menu children dropdown-menu">
+                                <li><i class="fa fa-puzzle-piece"></i><a href="/dashboard/devotions/create">New</a></li>
+                                <li><i class="fa fa-id-badge"></i><a href="/">Edit Existing</a></li>
+                            </ul>
+                        </li>
                     
                 </ul>
             </div><!-- /.navbar-collapse -->
