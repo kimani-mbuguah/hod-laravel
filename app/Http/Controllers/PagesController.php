@@ -9,6 +9,7 @@ use App\SliderOne;
 use App\SliderTwo;
 use App\SliderThree;
 use App\Event;
+use App\Devotions;
 
 class PagesController extends Controller
 {
@@ -40,5 +41,10 @@ class PagesController extends Controller
     public function allSermons(){
         $sermons = Sermon::orderBy('created_at','desc')->paginate(6);
         return view('sermons.all')->with('sermons',$sermons);
+    }
+
+    public function allDevotions(){
+        $devotions = Devotions::orderBy('created_at','desc')->paginate(6);
+        return view('devotions.all')->with('devotions',$devotions);
     }
 }

@@ -14,7 +14,7 @@
                 <ol class="breadcrumb text-right">
                     <li><a href="#">Dashboard</a></li>
                     <li><a href="#">Devotions</a></li>
-                    <li class="active">Create New</li>
+                    <li class="active">Edit Devotion</li>
                 </ol>
             </div>
         </div>
@@ -29,15 +29,15 @@
             <div class="col-xs-12 col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <strong>New Daily Devotion</strong>
+                        <strong>Edit Devotion</strong>
                     </div>
                     <div class="card-body card-block">
-                        {!! Form::open(['action' => 'DevotionsController@store','files' => true,'method' => 'POST']) !!}
+                        {!! Form::open(['action' => ['DevotionsController@update',$devotion->id],'files' => true,'method' => 'POST']) !!}
                             <div class="form-group">
                                 {{Form::label('devotion title', 'Devotion Title', ['class' => 'form-control-label'])}}
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="fa fa-group"></i></div>
-                                    {{Form::text('title', '', ['class' => 'form-control', 'placeholder'=>'Devotion Title'])}}
+                                    {{Form::text('title', $devotion->title, ['class' => 'form-control', 'placeholder'=>'Devotion Title'])}}
                                 </div>
                                 <small class="form-text text-muted">ex. Youth Connect</small>
                             </div>
@@ -50,23 +50,24 @@
                                 <small class="form-text text-muted">ex. hod.jpg</small>
                             </div>
                             <div class="form-group">
-                                {{Form::label('devituib body', 'Devotion Body', ['class' => 'form-control-label'])}}
+                                {{Form::label('devotion description', 'Devotion Description', ['class' => 'form-control-label'])}}
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="fa fa-book"></i></div>
-                                    {{Form::textarea('description', '', ['id' => 'article-ckeditor','class' => 'form-control', 'maxlength' => 50])}}
+                                    {{Form::textarea('description', $devotion->description, ['id' => 'article-ckeditor','class' => 'form-control'])}}
                                 </div>
                                 <small class="form-text text-muted">ex. House of Destiny Church</small>
                             </div>
                             <div class="form-group">
-                                    {{Form::label('devotion audio file', 'Devotion Audio File', ['class' => 'form-control-label'])}}
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                                        {{Form::file('audio')}}
-                                    </div>
-                                    <small class="form-text text-muted">ex. hod.mp3</small>
+                                {{Form::label('devotion audio file', 'Devotion Audio File', ['class' => 'form-control-label'])}}
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                    {{Form::file('audio')}}
                                 </div>
+                                <small class="form-text text-muted">ex. hod.mp3</small>
+                            </div>
                             <div class="fom-group">
-                                {{Form::submit('Create Devotion',['class'=>'btn btn-outline-primary btn-lg btn-block'])}}
+                                {{Form::hidden('_method','PUT')}}
+                                {{Form::submit('Edit Devotion',['class'=>'btn btn-outline-primary btn-lg btn-block'])}}
                             </div>
                         {!! Form::close() !!}
                     </div>
