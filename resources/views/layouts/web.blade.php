@@ -33,17 +33,8 @@
 						<div class="header-timer">
 							<p>Youth Connect</p>
 							<ul class="headercounter">
-								<li> <span class="days">00</span>
-									<p class="days_ref">DAYS</p>
-								</li>
-								<li> <span class="hours">00</span>
-									<p class="hours_ref">HOURS</p>
-								</li>
-								<li> <span class="minutes">00</span>
-									<p class="minutes_ref">MINTS</p>
-								</li>
-								<li> <span class="seconds">00</span>
-									<p class="seconds_ref">SECS</p>
+								<li> <span >Every Thursday</span>
+									<p>6:00 P.M To 7:30 P.M</p>
 								</li>
 							</ul>
 						</div>
@@ -302,7 +293,7 @@
             </script>
             <script class="source" type="text/javascript">
                 $('.countdown').downCount({
-                    date: '09/10/2018 12:00:00',
+                    date: '09/10/2019 09:00:00',
                     offset: +10
                 });
             </script>
