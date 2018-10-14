@@ -17,12 +17,14 @@ class PagesController extends Controller
         $sliderones = SliderOne::all();
         $slidertwos = SliderTwo::all();
         $sliderthrees = SliderThree::all();
+        $devotions = Devotions::all();
         $event = Event::orderBy('created_at','desc')->first();
         return view('pages.index')
         ->with('sliderones',$sliderones)
         ->with('slidertwos',$slidertwos)
         ->with('sliderthrees',$sliderthrees)
-        ->with('event',$event);
+        ->with('event',$event)
+        ->with('devotions',$devotions);
     }
 
     public function about(){

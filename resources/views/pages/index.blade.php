@@ -346,110 +346,35 @@
                 </div>
                 <div class="col-md-6 column">
                     <div class="latest-sermons remove-ext">
-                        <div class="sermon">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="image">
-                                        <img src="images/resource/sermon1.jpg" alt="" />
-                                        <a href="sermon-single.html" title=""><i class="fa fa-link"></i></a>
+                        @if(count($devotions) >0 )
+                            @foreach ($devotions as $devotion)
+                            <div class="sermon">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="image">
+                                            <img src="/images/sermons_images/{{$devotion->image}}" alt="" />
+                                            <a href="#" title=""><i class="fa fa-link"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <h3><a href="#" title="">{{$devotion->title}}</a></h3>
+                                        <span><i class="fa fa-calendar-o"></i> {{$devotion->created_at}}</span>
+                                        <p>{!!$devotion->description!!}</p>
+                                    </div>
+                                    <div class="hover-in">
+                                        <ul class="sermon-media">
+                                            <li><a title=""><i class="audio-btn fa fa-headphones"></i>
+                                                    <div class="audioplayer"><audio src="/sermons/{{$devotion->audio}}"></audio><span class="cross">X</span></div>
+                                                </a></li>
+                                            <li><a target="_blank" href="/sermons/{{$devotion->audio}}" title=""><i class="fa fa-download"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-9">
-                                    <h3><a href="sermon-single.html" title="">Christmas: Doing God’s Will</a></h3>
-                                    <span><i class="fa fa-calendar-o"></i> November 01, 2014</span>
-                                    <p>Aenean leo vene quam. Pellntes ique ornare sem eius modte venenatis vestibum. Cras mattis itugir pur</p>
-                                </div>
-                                <div class="hover-in">
-                                    <ul class="sermon-media">
-                                        <li><a href="http://vimeo.com/44867610" data-rel="prettyPhoto" title=""><i class="fa fa-film"></i></a></li>
-                                        <li><a title=""><i class="audio-btn fa fa-headphones"></i>
-                                                <div class="audioplayer"><audio src="{{asset('sermons/sermon.mp3')}}"></audio><span class="cross">X</span></div>
-                                            </a></li>
-                                        <li><a target="_blank" href="../../themes.webinane.com/deeds/test.html" title=""><i class="fa fa-download"></i></a></li>
-                                        <li><a target="_blank" href="../../themes.webinane.com/deeds/test.pdf" title=""><i class="fa fa-book"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div><!-- SERMON -->
-                        <div class="sermon">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="image">
-                                        <img src="images/resource/sermon2.jpg" alt="" />
-                                        <a href="sermon-single.html" title=""><i class="fa fa-link"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <h3><a href="sermon-single.html" title="">Family Matters</a></h3>
-                                    <span><i class="fa fa-calendar-o"></i> November 01, 2014</span>
-                                    <p>Aenean leo vene quam. Pellntes ique ornare sem eius modte venenatis vestibum. Cras mattis itugir pur</p>
-                                </div>
-                                <div class="hover-in">
-                                    <ul class="sermon-media">
-                                        <li><a href="http://vimeo.com/44867610" data-rel="prettyPhoto" title=""><i class="fa fa-film"></i></a></li>
-                                        <li><a title=""><i class="audio-btn fa fa-headphones"></i>
-                                                <div class="audioplayer"><audio src="{{asset('sermons/sermon.mp3')}}"></audio><span class="cross">X</span></div>
-                                            </a></li>
-                                        <li><a target="_blank" href="../../themes.webinane.com/deeds/test.html" title=""><i class="fa fa-download"></i></a></li>
-                                        <li><a target="_blank" href="../../themes.webinane.com/deeds/test.pdf" title=""><i class="fa fa-book"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div><!-- SERMON -->
-                    </div><!-- LATEST SERMONS -->
-                </div>
-                <div class="col-md-6 column">
-                    <div class="latest-sermons remove-ext">
-                        <div class="sermon">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="image">
-                                        <img src="images/resource/sermon1.jpg" alt="" />
-                                        <a href="sermon-single.html" title=""><i class="fa fa-link"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <h3><a href="sermon-single.html" title="">Christmas: Doing God’s Will</a></h3>
-                                    <span><i class="fa fa-calendar-o"></i> November 01, 2014</span>
-                                    <p>Aenean leo vene quam. Pellntes ique ornare sem eius modte venenatis vestibum. Cras mattis itugir pur</p>
-                                </div>
-                                <div class="hover-in">
-                                    <ul class="sermon-media">
-                                        <li><a href="http://vimeo.com/44867610" data-rel="prettyPhoto" title=""><i class="fa fa-film"></i></a></li>
-                                        <li><a title=""><i class="audio-btn fa fa-headphones"></i>
-                                                <div class="audioplayer"><audio src="{{asset('sermons/sermon.mp3')}}"></audio><span class="cross">X</span></div>
-                                            </a></li>
-                                        <li><a target="_blank" href="../../themes.webinane.com/deeds/test.html" title=""><i class="fa fa-download"></i></a></li>
-                                        <li><a target="_blank" href="../../themes.webinane.com/deeds/test.pdf" title=""><i class="fa fa-book"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div><!-- SERMON -->
-                        <div class="sermon">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="image">
-                                        <img src="images/resource/sermon2.jpg" alt="" />
-                                        <a href="sermon-single.html" title=""><i class="fa fa-link"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <h3><a href="sermon-single.html" title="">Family Matters</a></h3>
-                                    <span><i class="fa fa-calendar-o"></i> November 01, 2014</span>
-                                    <p>Aenean leo vene quam. Pellntes ique ornare sem eius modte venenatis vestibum. Cras mattis itugir pur</p>
-                                </div>
-                                <div class="hover-in">
-                                    <ul class="sermon-media">
-                                        <li><a href="http://vimeo.com/44867610" data-rel="prettyPhoto" title=""><i class="fa fa-film"></i></a></li>
-                                        <li><a title=""><i class="audio-btn fa fa-headphones"></i>
-                                                <div class="audioplayer"><audio src="{{asset('sermons/sermon.mp3')}}"></audio><span class="cross">X</span></div>
-                                            </a></li>
-                                        <li><a target="_blank" href="../../themes.webinane.com/deeds/test.html" title=""><i class="fa fa-download"></i></a></li>
-                                        <li><a target="_blank" href="../../themes.webinane.com/deeds/test.pdf" title=""><i class="fa fa-book"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div><!-- SERMON -->
+                            </div><!-- SERMON -->
+                            @endforeach   
+                        @else
+                        <h2>No Devotions To Show</h2>
+                        @endif
                     </div><!-- LATEST SERMONS -->
                 </div>
             </div>
