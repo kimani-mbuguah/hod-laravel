@@ -42,30 +42,16 @@
                             <h4>COMMENTS</h4>
                             <ul>
                                 <li>
-                                    <div class="comment">
-                                        <div class="avatar"><img src="/images/resource/comment1.jpg" alt="" /><a href="#" title="">REPLY</a></div>
-                                        <h5>Thoms Gomz Britian
-                                        <i><span>September</span> 24, 2013 at <span>1:05 pm</span></i></h5>
-                                        <p>Praesent rhoncus nunc vitae metus condi tum viverra. Fusce sed estorci condime felis. Ndisse ullamcorper vulputate sagittis. Quisque ullamcorper euismod.</p>
-                                    </div><!-- COMMENT -->	
-                                    <ul>
-                                        <li>
+                                    @if(count($comments) > 0 )
+                                        @foreach ($comments as $comment)
                                             <div class="comment">
-                                                <div class="avatar"><img src="/images/resource/comment2.jpg" alt="" /><a href="#" title="">REPLY</a></div>
-                                                <h5>Thoms Gomz Britian
-                                                <i><span>September</span> 24, 2013 at <span>1:05 pm</span></i></h5>
-                                                <p>Praesent rhoncus nunc vitae metus condi tum viverra. Fusce sed estorci condime felis. Ndisse ullamcorper vulputate sagittis .</p>
-                                            </div><!-- COMMENT -->
-                                        </li>
-                                    </ul>								
-                                </li>
-                                <li>
-                                    <div class="comment">
-                                        <div class="avatar"><img src="/images/resource/comment3.jpg" alt="" /><a href="#" title="">REPLY</a></div>
-                                        <h5>Thoms Gomz Britian
-                                        <i><span>September</span> 24, 2013 at <span>1:05 pm</span></i></h5>
-                                        <p>Praesent rhoncus nunc vitae metus condi tum viverra. Fusce sed estorci condime felis. Ndisse ullamcorper vulputate sagittis. Quisque ullamcorper euismod.</p>
-                                    </div><!-- COMMENT -->
+                                                <div class="avatar"><img src="/images/resource/comment1.jpg" alt="" /><a href="#" title="">REPLY</a></div>
+                                                <h5>{!!$comment->name!!}
+                                                <i><span>{!!$comment->created_at!!}</span></i></h5>
+                                                <p>{!!$comment->comment!!}</p>
+                                            </div><!-- COMMENT --><br>
+                                        @endforeach   
+                                    @endif							
                                 </li>
                             </ul>
                         </div><!-- COMMENTS -->										
@@ -78,7 +64,7 @@
                                 {{Form::text('email', '', ['class' => 'form-control', 'placeholder'=>'Your Email'])}}
                                 {{Form::textarea('comment', '', ['class' => 'form-control', 'placeholder'=>'Comment','rows'=>'3'])}}
                                 {{Form::submit('Comment',['class'=>'btn btn-outline-primary btn-lg btn-block'])}}
-                                {{Form::hidden('post_comment', $post->id)}}
+                                {{Form::hidden('post_id', $post->id)}}
                             {!! Form::close() !!}
                         </div><!-- COMMENT FORM -->	
                     </div>
@@ -90,34 +76,41 @@
                             </form>
                         </div><!-- SEARCH FORM -->
                         <div class="widget">
-                            <div class="widget-title"><h4>RECENT BLOG</h4></div>
-                            <div class="remove-ext">
-                                <div class="widget-blog">
-                                    <div class="widget-blog-img"><img src="images/resource/widget-blog.jpg" alt="" /></div>
-                                    <p><a href="blog-single.html" title="">Suspendisse velit anteg, aliquet vel adiping.</a></p>
-                                    <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
-                                </div><!-- WIDGET BLOG -->
-                                <div class="widget-blog">
-                                    <div class="widget-blog-img"><img src="images/resource/widget-blog2.jpg" alt="" /></div>
-                                    <p><a href="blog-single.html" title="">Suspendisse velit anteg, aliquet vel adiping.</a></p>
-                                    <span><i class="fa fa-calendar-o"></i> November 01, 2013</span>
-                                </div><!-- WIDGET BLOG -->
-                            </div>						
-                        </div><!-- RECENT BLOG -->
+                            <div class="widget-title"><h4>UPCOMING EVENT</h4></div>					
+                            <div class="event-count">
+                                <div class="event-img">
+                                    <img src="/images/event_images/{{$event['image']}}" alt="" />
+                                    <div class="downcount">
+                                        <i class="fa fa-clock-o"></i>
+                                        <ul class="countdown">
+                                            <li> <span class="days">Date</span>
+                                            <p class="days_ref">{{$event['date']}}</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h4><a href="event-single.html" title="">{{$event['title']}}</a></h4>
+                            </div>
+                        </div><!-- UPCOMING EVENT -->					
                         <div class="widget">
-                            <div class="widget-title"><h4>LATEST EVENT</h4></div>
-                            <div class="animal-event simple">
-                                <div class="animal-detail">
-                                    <h4><a href="#" title="">Offers And General Visual</a></h4>
-                                    <div class="animal-img"><img src="/images/resource/animal-event1.jpg" alt="" /><span><strong>12</strong>Dec 2014</span></div>
-                                    <ul>
-                                        <li><a href="#" title=""><i class="fa fa-map-marker"></i></a> <span>Torque Inc.1614 Chestnut Ave. Boston, MA 02166</span></li>
-                                        <li><a href="#" title=""><i class="fa fa-comments"></i></a><span>32 Comments</span></li>
-                                        <li><a href="#" title=""><i class="fa fa-clock-o"></i></a><span>30-08-2014 10:48 am</span></li>
-                                    </ul>
+                            <div class="widget-title"><h4>RECENT SERMON</h4></div>
+                            <div class="sermon-widget">
+                                <div class="sermon-img">
+                                    <img src="/images/sermons_images/{{$latestSermon['image']}}" alt="" />
+                                <span><i class="fa fa-calendar-o"></i> {{$latestSermon['created_at']}}</span>
+                                    <h3><a href="#" title="">{{$latestSermon['title']}}</a></h3>
+                                </div>
+                                <div class="sermon-detail">
+                                <p>{!! str_limit($latestSermon['description'], $limit = 300, $end = '...') !!}</p>
+                                    <ul class="sermon-media">
+                                        <li><a title=""><i class="audio-btn fa fa-headphones"></i>
+                                            <div class="audioplayer"><audio  src="/sermons/{{$latestSermon['audio']}}"></audio><span class="cross">X</span></div>
+                                        </a></li>
+                                        <li><a target="_blank" href="/sermons/{{$latestSermon['audio']}}" title=""><i class="fa fa-download"></i></a></li>
+                                    </ul>									
                                 </div>
                             </div>
-                        </div><!-- LATEST EVENT -->
+                        </div><!-- RECENT SERMON -->
                     </aside><!-- SIDEBAR -->
                 </div>
             </div>

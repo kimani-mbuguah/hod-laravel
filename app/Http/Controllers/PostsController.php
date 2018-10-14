@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Post;
 use App\Sermon;
 use App\Event;
+use App\PostComment;
 
 class PostsController extends Controller
 {
@@ -70,7 +71,17 @@ class PostsController extends Controller
     public function show($id)
     {
         $post = Post::find($id);
-        return view('posts.postSingle')->with('post',$post);
+        $latestSermon = Sermon::orderBy('created_at','desc')->first();
+        $event = Event::orderBy('created_at','desc')->first();
+        $footerPosts = Post::orderBy('created_at','desc')->take(2)->get();
+        $comments = PostComment::where('post_id', $id)
+        ->orderBy('created_at','asc')->get();
+        return view('posts.postSingle')
+        ->with('latestSermon',$latestSermon)
+        ->with('event',$event)
+        ->with('post',$post)
+        ->with('comments',$comments)
+        ->with('footerPosts',$footerPosts);
     }
 
     /**

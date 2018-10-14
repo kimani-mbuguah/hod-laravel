@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\PostComment;
+use Illuminate\Support\Facades\Redirect;
 
 class PostCommentsController extends Controller
 {
@@ -44,9 +45,9 @@ class PostCommentsController extends Controller
         $postComment->name = $request->input('name');
         $postComment->email = $request->input('email');
         $postComment->comment = $request->input('comment');
-        $postComment->post_id = $request->input('post_comment');
+        $postComment->post_id = $request->input('post_id');
         $postComment->save();
-        return redirect('/posts');
+        return Redirect::back();
     }
 
     /**
