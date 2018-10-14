@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Gallery;
+use App\Post;
 
 class GalleryController extends Controller
 {
@@ -15,7 +16,10 @@ class GalleryController extends Controller
     public function index()
     {
         $galleries = Gallery::orderBy('created_at','desc')->paginate(16);
-        return view('gallery.index')->with('galleries',$galleries);
+        $footerPosts = Post::orderBy('created_at','desc')->take(2)->get();
+        return view('gallery.index')
+        ->with('footerPosts',$footerPosts)
+        ->with('galleries',$galleries);
     }
 
     /**

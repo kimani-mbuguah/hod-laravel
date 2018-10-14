@@ -76,7 +76,10 @@ class EventsController extends Controller
     public function show($id)
     {
         $event = Event::find($id);
-        return view('events.eventSingle')->with('event',$event);
+        $footerPosts = Post::orderBy('created_at','desc')->take(2)->get();
+        return view('events.eventSingle')
+        ->with('footerPosts',$footerPosts)
+        ->with('event',$event);
     }
 
     /**

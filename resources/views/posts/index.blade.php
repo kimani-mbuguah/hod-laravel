@@ -29,7 +29,7 @@
                                         <div class="col-md-7">
                                             <div class="blog-detail">
                                                 <h3><a href="/posts/{{$post->id}}" title="{{$post->title}}">{{$post->title}}</a></h3>
-                                                <p> {!! str_limit($post->body, $limit = 150, $end = '...') !!}</p>
+                                                <p> {!! str_limit($post->body, $limit = 250, $end = '...') !!}</p>
                                                 <span><i class="fa fa-calendar-o"></i> {{$post->created_at}}</span>
                                             </div>
                                         </div>
