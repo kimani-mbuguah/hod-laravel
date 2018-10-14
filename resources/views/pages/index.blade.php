@@ -311,35 +311,23 @@
                 <div class="upcoming-event">
                     <div class="row">
                         <div class="col-md-6 column">
-                            <h3><i class="fa fa-bank"></i> Next Event</h3>
-                            <span><i class="fa fa-calendar-o"></i> 06, 09, 2018</span>
-                            <span><i class="fa fa-clock-o"></i> 5:00 pm</span>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl</p>
+                            <h3><i class="fa fa-bank"></i> Latest Event</h3>
+                            <span><i class="fa fa-calendar-o"></i> {{$event['date']}}</span>
+                            <span><i class="fa fa-clock-o"></i> {{$event['start_time']}}</span>
+                            <p>{!! str_limit($event['description'], $limit = 200, $end = '...') !!}</p>
                             <div class="remaining-time">
                                 <div class="col-md-6 column">
-                                    <h5>This Church Prayers</h5>
-                                    <span>Prayers Time</span>
+                                    <h5>{{$event['title']}}</h5>
+                                    <span>{{$event['location']}}</span>
                                 </div>
                                 <div class="col-md-6 timing column">
-                                    <ul class="countdown">
-                                        <li> <span class="days">00</span>
-                                            <p class="days_ref">DAYS</p>
-                                        </li>
-                                        <li> <span class="hours">00</span>
-                                            <p class="hours_ref">HOURS</p>
-                                        </li>
-                                        <li> <span class="minutes">00</span>
-                                            <p class="minutes_ref">MINTS</p>
-                                        </li>
-                                        <li> <span class="seconds">00</span>
-                                            <p class="seconds_ref">SECS</p>
-                                        </li>
-                                    </ul>
+                                        <a class="button" href="/events/{{$event['id']}}" title="">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 column">
-                            <iframe src="https://player.vimeo.com/video/61350461?title=0&amp;byline=0&amp;portrait=0" height="280"></iframe>
+                                <iframe height="280" src="https://www.youtube.com/embed/gv_DzgrR4JA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            
                         </div>
                     </div>
                 </div>

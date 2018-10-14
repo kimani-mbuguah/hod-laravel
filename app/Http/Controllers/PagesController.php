@@ -8,6 +8,7 @@ use App\Sermon;
 use App\SliderOne;
 use App\SliderTwo;
 use App\SliderThree;
+use App\Event;
 
 class PagesController extends Controller
 {
@@ -15,10 +16,12 @@ class PagesController extends Controller
         $sliderones = SliderOne::all();
         $slidertwos = SliderTwo::all();
         $sliderthrees = SliderThree::all();
+        $event = Event::orderBy('created_at','desc')->first();
         return view('pages.index')
         ->with('sliderones',$sliderones)
         ->with('slidertwos',$slidertwos)
-        ->with('sliderthrees',$sliderthrees);
+        ->with('sliderthrees',$sliderthrees)
+        ->with('event',$event);
     }
 
     public function about(){
