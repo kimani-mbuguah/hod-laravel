@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="map">
-                            <iframe src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=uk&amp;aq=&amp;sll=18.312811,-4.306641&amp;sspn=46.292419,86.572266&amp;ie=UTF8&amp;hq=&amp;hnear=United+Kingdom&amp;ll=52.352119,-2.647705&amp;spn=0.685471,1.352692&amp;t=p&amp;z=10&amp;output=embed"></iframe>	
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d857.5245508557185!2d37.28834327863833!3d-0.5117113152633762!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e1!3m2!1sen!2ske!4v1539544797877" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div><!--- GOOGLE MAP -->
                     </div>
                 </div>
@@ -53,13 +53,13 @@
                                 <h4>FILL IN THE FORM BELOW</h4>
                                 <div class="space"></div>
                                 <div id="message"></div>
-                                <form class="theme-form" method="post" action="https://html.webinane.com/deeds/contact.php" name="contactform" id="contactform">
-                                    <input name="name" class="half-field form-control" type="text" id="name"  placeholder="Name" />
-                                    <input name="email" class="half-field form-control" type="text" id="email" placeholder="Email" />
-                                    <textarea name="comments" class="form-control" id="comments" placeholder="Description" ></textarea>
-                                    <div class="g-recaptcha" data-sitekey="6LelmzAUAAAAAHBE2SJeRMfnzYVxH9RMGQstUij2"></div>
-                                    <input class="submit" type="submit"  id="submit" value="SUBMIT" />
-                                </form><!--- FORM -->
+                                @include('inc.messages')
+                                {!! Form::open(['action' => 'MessagesController@store','method' => 'POST','class'=>'theme-form']) !!}
+                                    {{Form::text('name', '', ['class' => 'form-control', 'placeholder'=>'Your Name'])}}
+                                    {{Form::text('email', '', ['class' => 'form-control', 'placeholder'=>'Your Email'])}}
+                                    {{Form::textarea('message', '', ['class' => 'form-control', 'placeholder'=>'Message','rows'=>'3'])}}
+                                    {{Form::submit('Send',['class'=>'submit'])}}
+                                {!! Form::close() !!}
                             </div>
                         </div>
                     </div>

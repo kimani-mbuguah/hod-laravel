@@ -19,6 +19,7 @@ Route::get('/dashboard/devotions/all','PagesController@allDevotions');
 //these are routes to blog/events etc
 Route::resource('posts','PostsController');
 Route::resource('events','EventsController');
+Route::resource('messages','MessagesController');
 Route::resource('word','SermonsController');
 Route::resource('gallery','GalleryController');
 Route::resource('/dashboard/slider/sliderone','SliderOneController');
