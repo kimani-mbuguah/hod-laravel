@@ -187,12 +187,13 @@
                                 <div class="widget-title"><h4>Quick Message</h4></div>
                                 <div class="quick-message">
                                     <div id="message"></div>
-                                    <form method="post" action="https://html.webinane.com/deeds/contact.php" name="contactform" id="contactform">
-                                        <input name="name" class="half-field form-control" type="text" id="name"  placeholder="Name" />
-                                        <input name="email" class="half-field form-control" type="text" id="email" placeholder="Email" />
-                                        <textarea name="comments" class="form-control" id="comments" placeholder="Description" ></textarea>
-                                        <input class="submit" type="submit"  id="submit" value="SUBMIT" />
-                                    </form><!--- FORM -->
+                                    @include('inc.messages')
+                                    {!! Form::open(['action' => 'MessagesController@store','method' => 'POST','name'=>'contactform']) !!}
+                                        {{Form::text('name', '', ['class' => 'form-control', 'placeholder'=>'Your Name'])}}
+                                        {{Form::text('email', '', ['class' => 'form-control', 'placeholder'=>'Your Email'])}}
+                                        {{Form::textarea('message', '', ['class' => 'form-control', 'placeholder'=>'Message'])}}
+                                        {{Form::submit('Send',['class'=>'submit'])}}
+                                    {!! Form::close() !!}
                                 </div>
                             </div>
                         </div><!-- QUICK MESSAGE WIDGET -->
