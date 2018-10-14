@@ -125,46 +125,27 @@
 			<div class="row">
 				<div class="col-md-12 column">
 					<div class="pastors-carousel">
-						<div class="pastors-message">
-							<div class="row">
-								<div class="col-md-3">
-									<img src="images/resource/pastor1.jpg" alt="" />
+						@if(count($devotions) >0 )
+                            @foreach ($devotions as $devotion)
+								<div class="pastors-message">
+									<div class="row">
+										<div class="col-md-3">
+											<img src="/images/sermons_images/{{$devotion->image}}" alt="" />
+										</div>
+										<div class="col-md-9">
+											<h4>{{$devotion->title}}</h4>
+											<p>{!!$devotion->description!!} </p>
+											<ul class="sermon-media">
+												<li><a title=""><i class="audio-btn fa fa-headphones"></i>
+													<div class="audioplayer"><audio src="/sermons/{{$devotion->audio}}"></audio><span class="cross">X</span></div>
+												</a></li>
+												<li><a target="_blank" href="/sermons/{{$devotion->audio}}" title=""><i class="fa fa-download"></i></a></li>
+											</ul>
+										</div>					
+									</div>
 								</div>
-								<div class="col-md-9">
-									<h4>PASTOR FRANK</h4>
-									<span>DIRECTOR-BASELINE</span>
-									<p>Ut ac eleifend mauris, ac porta lacus. Sed pharetra magna massa, sit amet condimentum risus congue ut. Duis eu neque convallis, auctor lacus sed, tincidunt arcu. Aliquam vitae hendrerit dolor. Ut ac eleifend mauris, ac porta lacus. Sed pharetra magna massa, sit amet condimentum risus congue ut. Ut ac eleifend mauris, ac porta lacus. Sed pharetra magna massa, sit amet condimentum risus congue ut. Duis eu neque convallis, auctor lacus sed, tincidunt arcu. </p>
-									<ul class="sermon-media">
-										<li><a href="http://vimeo.com/44867610" data-rel="prettyPhoto" title=""><i class="fa fa-film"></i></a></li>
-										<li><a title=""><i class="audio-btn fa fa-headphones"></i>
-											<div class="audioplayer"><audio src="sermons/sermon.mp3"></audio><span class="cross">X</span></div>
-										</a></li>
-										<li><a target="_blank" href="../../themes.webinane.com/deeds/test.html" title=""><i class="fa fa-download"></i></a></li>
-										<li><a target="_blank" href="../../themes.webinane.com/deeds/test.pdf" title=""><i class="fa fa-book"></i></a></li>
-									</ul>
-								</div>					
-							</div>
-						</div>
-						<div class="pastors-message">
-							<div class="row">
-								<div class="col-md-3">
-									<img src="images/resource/pastor2.jpg" alt="" />
-								</div>
-								<div class="col-md-9">
-									<h4>PASTOR FRANK</h4>
-									<span>DIRECTOR-BASELINE</span>
-									<p>Ut ac eleifend mauris, ac porta lacus. Sed pharetra magna massa, sit amet condimentum risus congue ut. Duis eu neque convallis, auctor lacus sed, tincidunt arcu. Aliquam vitae hendrerit dolor. Ut ac eleifend mauris, ac porta lacus. Sed pharetra magna massa, sit amet condimentum risus congue ut. Ut ac eleifend mauris, ac porta lacus. Sed pharetra magna massa, sit amet condimentum risus congue ut. Duis eu neque convallis, auctor lacus sed, tincidunt arcu. </p>
-									<ul class="sermon-media">
-										<li><a href="http://vimeo.com/44867610" data-rel="prettyPhoto" title=""><i class="fa fa-film"></i></a></li>
-										<li><a title=""><i class="audio-btn fa fa-headphones"></i>
-											<div class="audioplayer"><audio src="sermons/sermon.mp3"></audio><span class="cross">X</span></div>
-										</a></li>
-										<li><a target="_blank" href="../../themes.webinane.com/deeds/test.html" title=""><i class="fa fa-download"></i></a></li>
-										<li><a target="_blank" href="../../themes.webinane.com/deeds/test.pdf" title=""><i class="fa fa-book"></i></a></li>
-									</ul>
-								</div>					
-							</div>
-						</div>
+							@endforeach   
+                        @endif
 					</div>
 				</div>
 			</div>
@@ -200,7 +181,7 @@
 										<img src="images/resource/team4.jpg" alt="" />
 									</div>
 									<div class="member-detail">
-										<h3><a href="team-single.html" title="">PASTOR CAROLINE FRANK</a></h3>
+										<h3><a href="team-single.html" title="">PASTOR CAROL FRANK</a></h3>
 										<span>LEAD PASTOR</span>
 										<p>Sample story of the team member, the ministries they head, their interests, something funny about them and so on</p>
 									</div>

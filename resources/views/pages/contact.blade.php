@@ -6,7 +6,7 @@
             <h1>CONTACT <span>US</span></h1>
             <ul>
                 <li><a href="/" title="">Home</a></li>
-                <li><a href="contact.html" title="">Contact Us</a></li>
+                <li><a href="#" title="">Contact Us</a></li>
             </ul>
         </div>
     </div><!--- PAGE TOP -->

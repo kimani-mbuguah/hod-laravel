@@ -18,7 +18,7 @@ class PagesController extends Controller
         $sliderones = SliderOne::all();
         $slidertwos = SliderTwo::all();
         $sliderthrees = SliderThree::all();
-        $devotions = Devotions::all();
+        $devotions = Devotions::orderBy('created_at','desc')->paginate(4);
         $event = Event::orderBy('created_at','desc')->first();
         $galleries = Gallery::orderBy('created_at','desc')->paginate(8);
         $footerPosts = Post::orderBy('created_at','desc')->take(2)->get();
@@ -33,11 +33,16 @@ class PagesController extends Controller
     }
 
     public function about(){
-        return view('pages.about');
+        $devotions = Devotions::orderBy('created_at','desc')->get();
+        $footerPosts = Post::orderBy('created_at','desc')->take(2)->get();
+        return view('pages.about')
+        ->with('devotions',$devotions)
+        ->with('footerPosts',$footerPosts);
     }
 
     public function contact(){
-        return view('pages.contact');
+        $footerPosts = Post::orderBy('created_at','desc')->take(2)->get();
+        return view('pages.contact')->with('footerPosts',$footerPosts);
     }
 
     public function allPosts(){
