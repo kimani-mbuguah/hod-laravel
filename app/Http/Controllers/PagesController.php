@@ -21,13 +21,15 @@ class PagesController extends Controller
         $devotions = Devotions::all();
         $event = Event::orderBy('created_at','desc')->first();
         $galleries = Gallery::orderBy('created_at','desc')->paginate(8);
+        $footerPosts = Post::orderBy('created_at','desc')->take(2)->get();
         return view('pages.index')
         ->with('sliderones',$sliderones)
         ->with('slidertwos',$slidertwos)
         ->with('sliderthrees',$sliderthrees)
         ->with('event',$event)
         ->with('devotions',$devotions)
-        ->with('galleries',$galleries);
+        ->with('galleries',$galleries)
+        ->with('footerPosts',$footerPosts);
     }
 
     public function about(){
