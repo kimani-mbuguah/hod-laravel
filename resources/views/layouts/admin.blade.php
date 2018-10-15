@@ -51,9 +51,9 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Slider</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="dashboard/slider/sliderone">Slider One</a></li>
-                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="dashboard/slider/slidertwo">Slider Two</a></li>
-                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="dashboard/slider/sliderthree">Slider Three</a></li>
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="/sliderone">Slider One</a></li>
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="/slidertwo">Slider Two</a></li>
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="/sliderthree">Slider Three</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">

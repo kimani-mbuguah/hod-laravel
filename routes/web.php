@@ -22,10 +22,10 @@ Route::resource('events','EventsController');
 Route::resource('messages','MessagesController');
 Route::resource('word','SermonsController');
 Route::resource('gallery','GalleryController');
-Route::resource('/dashboard/slider/sliderone','SliderOneController');
-Route::resource('/dashboard/slider/slidertwo','SliderTwoController');
-Route::resource('/dashboard/slider/sliderthree','SliderThreeController');
-Route::resource('/dashboard/devotions','DevotionsController');
+Route::resource('/sliderone','SliderOneController');
+Route::resource('/slidertwo','SliderTwoController');
+Route::resource('/sliderthree','SliderThreeController');
+Route::resource('/devotions','DevotionsController');
 //comment on post routes
 Route::resource('comments','PostCommentsController');
 
