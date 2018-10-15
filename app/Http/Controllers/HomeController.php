@@ -25,6 +25,9 @@ class HomeController extends Controller
     public function index()
     {
         $messages = Message::orderBy('created_at','desc')->take(5)->get();
-        return view('home') ->with('messages',$messages);
+        $totalMessages = Message::count();
+        return view('home') 
+        ->with('totalMessages',$totalMessages)
+        ->with('messages',$messages);
     }
 }

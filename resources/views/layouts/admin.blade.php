@@ -123,10 +123,16 @@
                                 id="message"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="ti-email"></i>
-                            <span class="count bg-primary">9</span>
+                            <span class="count bg-primary">{{$totalMessages}}</span>
                           </button>
                           <div class="dropdown-menu" aria-labelledby="message">
-                            <p class="red">You have 4 Mails</p>
+                            
+                                @if($totalMessages >1)
+                                    <p class="red">You have {{$totalMessages}} Unread Messages</p>
+                                @else 
+                                    <p class="red">You have {{$totalMessages}} Unread Message</p>
+                                @endif
+                                
                             @if(count($messages) >0 )
                                 @foreach ($messages as $message)
                                 <a class="dropdown-item media bg-flat-color-1" href="#">
