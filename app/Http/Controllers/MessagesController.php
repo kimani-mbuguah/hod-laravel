@@ -45,6 +45,7 @@ class MessagesController extends Controller
         $message->name = $request->input('name');
         $message->email = $request->input('email');
         $message->message = $request->input('message');
+        $message->read = "false";
         $message->save();
         return Redirect::back()->with('success','Message sent');
     }
