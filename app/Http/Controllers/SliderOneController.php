@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\SliderOne;
+use App\Message;
 
 class SliderOneController extends Controller
 {
@@ -14,7 +15,11 @@ class SliderOneController extends Controller
      */
     public function index()
     {
-        return view('carousel.sliderone');
+        $messages = Message::orderBy('created_at','desc')->take(5)->get();
+        $totalMessages = Message::count();
+        return view('carousel.sliderone')
+        ->with('totalMessages',$totalMessages)
+        ->with('messages',$messages);
     }
 
     /**

@@ -139,7 +139,7 @@
                                     <span class="photo media-left"><img alt="avatar" src="/images/avatar/1.jpg"></span>
                                     <span class="message media-body">
                                     <span class="name float-left">{{$message->name}}</span>
-                                    <p> {!! str_limit($message->message, $limit = 50, $end = '...') !!}</p>
+                                    <p> {!!$message->message!!}</p>
                                     </span>
                                 </a>
                                 @endforeach  
