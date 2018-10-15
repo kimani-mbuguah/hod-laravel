@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Event;
 use App\Post;
+use App\Message;
 
 class EventsController extends Controller
 {
@@ -31,7 +32,11 @@ class EventsController extends Controller
      */
     public function create()
     {
-        return view('events.create');
+        $messages = Message::orderBy('created_at','desc')->take(5)->get();
+        $totalMessages = Message::count();
+        return view('events.create')
+        ->with('totalMessages',$totalMessages)
+        ->with('messages',$messages);
     }
 
     /**

@@ -32,7 +32,7 @@
             @endforeach   
                 {{$devotions->links()}} 
             @else
-                <h3>No posts available</h3>
+                <p class="red">Nothing to show</p>
             @endif
         </div>
     </div>

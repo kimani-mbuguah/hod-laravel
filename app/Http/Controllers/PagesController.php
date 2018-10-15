@@ -11,6 +11,7 @@ use App\SliderThree;
 use App\Event;
 use App\Devotions;
 use App\Gallery;
+use App\Message;
 
 class PagesController extends Controller
 {
@@ -46,17 +47,32 @@ class PagesController extends Controller
     }
 
     public function allPosts(){
+        $messages = Message::orderBy('created_at','desc')->take(5)->get();
+        $totalMessages = Message::count();
         $posts = Post::orderBy('created_at','desc')->paginate(6);
-        return view('posts.all')->with('posts',$posts);
+        return view('posts.all')
+        ->with('posts',$posts)
+        ->with('totalMessages',$totalMessages)
+        ->with('messages',$messages);
     }
 
     public function allSermons(){
+        $messages = Message::orderBy('created_at','desc')->take(5)->get();
+        $totalMessages = Message::count();
         $sermons = Sermon::orderBy('created_at','desc')->paginate(6);
-        return view('sermons.all')->with('sermons',$sermons);
+        return view('sermons.all')
+        ->with('sermons',$sermons)
+        ->with('totalMessages',$totalMessages)
+        ->with('messages',$messages);
     }
 
     public function allDevotions(){
+        $messages = Message::orderBy('created_at','desc')->take(5)->get();
+        $totalMessages = Message::count();
         $devotions = Devotions::orderBy('created_at','desc')->paginate(6);
-        return view('devotions.all')->with('devotions',$devotions);
+        return view('devotions.all')
+        ->with('devotions',$devotions)
+        ->with('totalMessages',$totalMessages)
+        ->with('messages',$messages);
     }
 }

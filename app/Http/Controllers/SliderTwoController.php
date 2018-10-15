@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\SliderTwo;
+use App\Message;
 
 class SliderTwoController extends Controller
 {
@@ -14,7 +15,11 @@ class SliderTwoController extends Controller
      */
     public function index()
     {
-        return view('carousel.slidertwo');
+        $messages = Message::orderBy('created_at','desc')->take(5)->get();
+        $totalMessages = Message::count();
+        return view('carousel.slidertwo')
+        ->with('totalMessages',$totalMessages)
+        ->with('messages',$messages);
     }
 
     /**

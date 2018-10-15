@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Sermon;
 use App\Post;
 use App\Event;
+use App\Message;
 
 class SermonsController extends Controller
 {
@@ -32,7 +33,11 @@ class SermonsController extends Controller
      */
     public function create()
     {
-        return view('sermons.create');
+        $messages = Message::orderBy('created_at','desc')->take(5)->get();
+        $totalMessages = Message::count();
+        return view('sermons.create')
+        ->with('totalMessages',$totalMessages)
+        ->with('messages',$messages);
     }
 
     /**

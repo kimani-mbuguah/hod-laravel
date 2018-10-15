@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\SliderThree;
+use App\Message;
 
 class SliderThreeController extends Controller
 {
@@ -14,7 +15,11 @@ class SliderThreeController extends Controller
      */
     public function index()
     {
-        return view('carousel.sliderthree');
+        $messages = Message::orderBy('created_at','desc')->take(5)->get();
+        $totalMessages = Message::count();
+        return view('carousel.sliderthree')
+        ->with('totalMessages',$totalMessages)
+        ->with('messages',$messages);
     }
 
     /**

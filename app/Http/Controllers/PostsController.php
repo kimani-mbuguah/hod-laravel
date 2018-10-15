@@ -7,6 +7,7 @@ use App\Post;
 use App\Sermon;
 use App\Event;
 use App\PostComment;
+use App\Message;
 
 class PostsController extends Controller
 {
@@ -35,7 +36,11 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return view('posts.create');
+        $messages = Message::orderBy('created_at','desc')->take(5)->get();
+        $totalMessages = Message::count();
+        return view('posts.create')
+        ->with('totalMessages',$totalMessages)
+        ->with('messages',$messages);
     }
 
     /**

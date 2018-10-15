@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Gallery;
 use App\Post;
-
+use App\Message;
 class GalleryController extends Controller
 {
     /**
@@ -29,7 +29,11 @@ class GalleryController extends Controller
      */
     public function create()
     {
-        return view('gallery.create');
+        $messages = Message::orderBy('created_at','desc')->take(5)->get();
+        $totalMessages = Message::count();
+        return view('gallery.create')
+        ->with('totalMessages',$totalMessages)
+        ->with('messages',$messages);
     }
 
     /**

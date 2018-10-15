@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Devotions;
-
+use App\Message;
 class DevotionsController extends Controller
 {
     /**
@@ -14,7 +14,7 @@ class DevotionsController extends Controller
      */
     public function index()
     {
-        $devotions = Devotiosn::orderBy('created_at','desc')->paginate(6);
+        $devotions = Devotions::orderBy('created_at','desc')->paginate(6);
         return view('devotions.index')->with('devotions',$devotions);;
     }
 
@@ -25,7 +25,11 @@ class DevotionsController extends Controller
      */
     public function create()
     {
-        return view('devotions.index');
+        $messages = Message::orderBy('created_at','desc')->take(5)->get();
+        $totalMessages = Message::count();
+        return view('devotions.index')
+        ->with('totalMessages',$totalMessages)
+        ->with('messages',$messages);
     }
 
     /**

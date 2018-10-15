@@ -15,7 +15,7 @@ Route::get('/about','PagesController@about');
 Route::get('/contact','PagesController@contact');
 Route::get('/posts/all','PagesController@allPosts');
 Route::get('/word/all','PagesController@allSermons');
-Route::get('/dashboard/devotions/all','PagesController@allDevotions');
+Route::get('devotions/all','PagesController@allDevotions');
 //these are routes to blog/events etc
 Route::resource('posts','PostsController');
 Route::resource('events','EventsController');
