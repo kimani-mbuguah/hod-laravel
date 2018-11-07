@@ -75,4 +75,7 @@ class PagesController extends Controller
         ->with('totalMessages',$totalMessages)
         ->with('messages',$messages);
     }
+    public function clear(){
+        Artisan::call('cache:clear');
+    }
 }
